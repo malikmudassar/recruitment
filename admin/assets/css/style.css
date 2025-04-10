@@ -1,0 +1,246 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Login Page */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2c3e50;
+}
+
+.login-box {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-logo img {
+    height: 50px;
+    margin-bottom: 1rem;
+}
+
+.login-logo h1 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+}
+
+.login-form input select {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #2980b9;
+}
+
+.error-message {
+    color: #e74c3c;
+    margin-bottom: 1rem;
+}
+
+/* Admin Header */
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c3e50;
+    padding: 1rem 2rem;
+    color: #fff;
+}
+
+.admin-header .logo img {
+    height: 40px;
+}
+
+.admin-info {
+    display: flex;
+    align-items: center;
+}
+
+.admin-name {
+    margin-right: 1rem;
+    font-weight: bold;
+}
+
+.logout-button {
+    color: #fff;
+    text-decoration: none;
+    background-color: #e74c3c;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+.logout-button:hover {
+    background-color: #c0392b;
+}
+
+/* Side Navigation */
+.sidenav {
+    width: 250px;
+    background-color: #34495e;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 60px; /* Adjust based on header height */
+}
+
+.sidenav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidenav ul li {
+    padding: 0.5rem 1rem;
+}
+
+.sidenav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.sidenav ul li a:hover {
+    color: #3498db;
+}
+
+/* Sub-Menu Styles */
+.submenu .submenu-items {
+    display: none;
+    padding-left: 1rem;
+}
+
+.submenu .submenu-items li {
+    padding: 0.25rem 0;
+}
+
+.submenu.active .submenu-items {
+    display: block;
+}
+
+.submenu-toggle {
+    cursor: pointer;
+    position: relative;
+}
+
+.submenu-toggle::after {
+    content: "▼";
+    font-size: 0.8rem;
+    position: absolute;
+    right: 0;
+    transition: transform 0.3s;
+}
+
+.submenu.active .submenu-toggle::after {
+    transform: rotate(180deg);
+}
+/* Main Content */
+.main-content {
+    margin-left: 250px; /* Same as sidenav width */
+    padding: 2rem;
+}
+
+/* Admin Footer */
+.admin-footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #2c3e50;
+    color: #fff;
+    margin-left: 250px; /* Same as sidenav width */
+}
+
+/* General Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 2rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #2c3e50;
+    color: #fff;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+table th, table td {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* Buttons */
+.add-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #2ecc71;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.add-button:hover {
+    background-color: #27ae60;
+}
+
+.edit-button {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.delete-button {
+    color: #e74c3c;
+    text-decoration: none;
+    margin-left: 0.5rem;
+}
