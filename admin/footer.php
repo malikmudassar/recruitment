@@ -1,5 +1,5 @@
-<footer class="admin-footer">
+<!-- <footer class="admin-footer">
     &copy; Cinergie Digital <?php echo date('Y'); ?>
-</footer>
+</footer> -->
 </body>
 </html>

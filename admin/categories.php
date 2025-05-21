@@ -29,13 +29,17 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
     <div class="main-content">
         <h1>Categories</h1>
-        <a href="add_category.php" class="add-button">Add New Category</a>
+      
         <table>
             <thead>
                 <tr>
                     <th>ID</th>
                     <th>Category Name</th>
                     <th>Description</th>
+                    <th>Offshore Salary</th>
+                    <th>offsore Perks</th>
+                    <th>Onsite Salary</th>
+                    <th>Onsite Perks</th>
                     <th>Actions</th>
                 </tr>
             </thead>
@@ -45,6 +49,10 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         <td><?php echo $category['category_id']; ?></td>
                         <td><?php echo $category['category_name']; ?></td>
                         <td><?php echo $category['description']; ?></td>
+                        <td><?php echo $category['offshore_salary']; ?></td>
+                        <td><?php echo $category['perks']; ?></td>
+                        <td><?php echo $category['onsite_salary']; ?></td>
+                        <td><?php echo $category['onsite_perks']; ?></td>
                         <td>
                             <a href="edit_category.php?id=<?php echo $category['category_id']; ?>" class="edit-button">Edit</a>
                             <a href="delete_category.php?id=<?php echo $category['category_id']; ?>" class="delete-button" onclick="return confirm('Are you sure?');">Delete</a>

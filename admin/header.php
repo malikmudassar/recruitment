@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-<header class="admin-header">
+<!-- <header class="admin-header">
     <div class="logo">
         <img src="assets/images/logo.png" alt="Company Logo">
     </div>
@@ -16,7 +16,7 @@
         <span class="admin-name"><?php echo $admin_name; ?></span>
         <a href="logout.php" class="logout-button">Logout</a>
     </div>
-</header>
-<?php 
+</header>-->
+<?php  
 $admin_name = $_SESSION['admin_name'];
 ?>

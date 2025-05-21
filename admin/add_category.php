@@ -16,14 +16,22 @@ $success = '';
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $category_name = $_POST['category_name'];
     $description = $_POST['description'];
+    $offshore_salary = $_POST['offshore_salary'];
+    $onsite_salary = $_POST['onsite_salary'];
+    $perks = $_POST['perks'];
+    $onsite_perks = $_POST['onsite_perks']; // Use a separate variable for onsite_perks
 
     if (empty($category_name)) {
         $error = 'Category name is required.';
     } else {
         // Insert new category into the database
-        $stmt = $conn->prepare("INSERT INTO TestCategories (category_name, description) VALUES (:category_name, :description)");
+        $stmt = $conn->prepare("INSERT INTO TestCategories (category_name, description, offshore_salary, onsite_salary, perks, onsite_perks) VALUES (:category_name, :description, :offshore_salary, :onsite_salary, :perks, :onsite_perks)");
         $stmt->bindParam(':category_name', $category_name);
         $stmt->bindParam(':description', $description);
+        $stmt->bindParam(':offshore_salary', $offshore_salary);
+        $stmt->bindParam(':onsite_salary', $onsite_salary);
+        $stmt->bindParam(':perks', $perks);
+        $stmt->bindParam(':onsite_perks', $onsite_perks);
         $stmt->execute();
 
         $success = 'Category added successfully!';
@@ -96,10 +104,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             color: #2ecc71;
             margin-bottom: 1rem;
         }
+        
     </style>
 </head>
 <body>
-    <?php include 'header.php'; ?>
+    
     <?php include 'sidenav.php'; ?>
 
     <div class="main-content">
@@ -113,12 +122,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <?php endif; ?>
             <form action="add_category.php" method="POST">
                 <input type="text" name="category_name" placeholder="Category Name" required>
-                <textarea name="description" placeholder="Description" rows="4"></textarea>
+                <textarea name="description" placeholder="Experience Required" rows="4"></textarea>
+                <input type="text" name="offshore_salary" placeholder="Offshore Salary" required>
+                <textarea name="perks" placeholder="Offshore Perks" rows="4"></textarea>
+                <input type="text" name="onsite_salary" placeholder="Onsite Salary" required>
+                <textarea name="onsite_perks" placeholder="Onsite Perks" rows="4"></textarea>
+
                 <button type="submit">Add Category</button>
             </form>
         </div>
     </div>
 
-    <?php include 'footer.php'; ?>
+   
 </body>
 </html>

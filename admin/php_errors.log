@@ -1,0 +1,3653 @@
+[09-May-2025 08:00:51 Europe/Berlin] POST data: Array
+(
+    [job_id] => 40
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 30
+    [salaryPackage] => on
+    [screening_questions] => [{"question":"Prior Aviation experience","answer":"Yes"},{"question":"Do you have worked with following technologies","answer":"Java, Java Spring Boot, Mongodb, Aws"},{"question":"What is your experience","answer":"rtwe"}]
+)
+
+[09-May-2025 08:00:51 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => Arbaz PM Review.docx
+            [type] => application/vnd.openxmlformats-officedocument.wordprocessingml.document
+            [tmp_name] => C:\xampp\tmp\php12FA.tmp
+            [error] => 0
+            [size] => 18064
+        )
+
+)
+
+[09-May-2025 08:00:51 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"30"},{"question":"Do you agree with the salary package","answer":"on"},{"question":"Prior Aviation experience","answer":"Yes"},{"question":"Do you have worked with following technologies","answer":"Java, Java Spring Boot, Mongodb, Aws"},{"question":"What is your experience","answer":"rtwe"}]
+[09-May-2025 08:01:29 Europe/Berlin] POST data: Array
+(
+    [job_id] => 39
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 30
+    [salaryPackage] => on
+    [screening_questions] => [{"question":"Prior Aviation experience","answer":"Yes"}]
+)
+
+[09-May-2025 08:01:29 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => Arbaz PM Review.docx
+            [type] => application/vnd.openxmlformats-officedocument.wordprocessingml.document
+            [tmp_name] => C:\xampp\tmp\phpA865.tmp
+            [error] => 0
+            [size] => 18064
+        )
+
+)
+
+[09-May-2025 08:01:29 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"30"},{"question":"Do you agree with the salary package","answer":"on"},{"question":"Prior Aviation experience","answer":"Yes"}]
+[09-May-2025 08:09:48 Europe/Berlin] POST data: Array
+(
+    [job_id] => 40
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 30
+    [salaryPackage] => on
+    [screening_questions] => [{"question":"Prior Aviation experience","answer":"Yes"},{"question":"Do you have worked with following technologies","answer":["Java","Java Spring Boot","Mongodb","Aws"]},{"question":"What is your experience","answer":"er"}]
+)
+
+[09-May-2025 08:09:48 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => PM Review Template (1).docx
+            [type] => application/vnd.openxmlformats-officedocument.wordprocessingml.document
+            [tmp_name] => C:\xampp\tmp\php45D5.tmp
+            [error] => 0
+            [size] => 15313
+        )
+
+)
+
+[09-May-2025 08:09:48 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"30"},{"question":"Do you agree with the salary package","answer":"on"},{"question":"Prior Aviation experience","answer":"Yes"},{"question":"Do you have worked with following technologies","answer":"Java, Java Spring Boot, Mongodb, Aws"},{"question":"What is your experience","answer":"er"}]
+[09-May-2025 08:10:27 Europe/Berlin] POST data: Array
+(
+    [job_id] => 39
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 30
+    [salaryPackage] => on
+    [screening_questions] => [{"question":"Prior Aviation experience","answer":"Yes"}]
+)
+
+[09-May-2025 08:10:27 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 681c5ecaeaf96_Arbaz PM Review.docx
+            [type] => application/vnd.openxmlformats-officedocument.wordprocessingml.document
+            [tmp_name] => C:\xampp\tmp\phpDD15.tmp
+            [error] => 0
+            [size] => 18064
+        )
+
+)
+
+[09-May-2025 08:10:27 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"30"},{"question":"Do you agree with the salary package","answer":"on"},{"question":"Prior Aviation experience","answer":"Yes"}]
+[09-May-2025 08:14:57 Europe/Berlin] POST data: Array
+(
+    [job_id] => 39
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 30
+    [salaryPackage] => on
+    [screening_questions] => [{"question":"Prior Aviation experience","answer":"Yes"}]
+)
+
+[09-May-2025 08:14:57 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => Arbaz PM Review.docx
+            [type] => application/vnd.openxmlformats-officedocument.wordprocessingml.document
+            [tmp_name] => C:\xampp\tmp\phpFB0A.tmp
+            [error] => 0
+            [size] => 18064
+        )
+
+)
+
+[09-May-2025 08:14:57 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"30"},{"question":"Do you agree with the salary package","answer":"on"},{"question":"Prior Aviation experience","answer":"Yes"}]
+[09-May-2025 08:15:37 Europe/Berlin] POST data: Array
+(
+    [job_id] => 40
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 30
+    [salaryPackage] => on
+    [screening_questions] => [{"question":"Prior Aviation experience","answer":"Yes"},{"question":"Do you have worked with following technologies","answer":["Java","Java Spring Boot","Mongodb","Aws"]},{"question":"What is your experience","answer":"fffd"}]
+)
+
+[09-May-2025 08:15:37 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 681c5ecaeaf96_Arbaz PM Review.docx
+            [type] => application/vnd.openxmlformats-officedocument.wordprocessingml.document
+            [tmp_name] => C:\xampp\tmp\php98C2.tmp
+            [error] => 0
+            [size] => 18064
+        )
+
+)
+
+[09-May-2025 08:15:37 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"30"},{"question":"Do you agree with the salary package","answer":"on"},{"question":"Prior Aviation experience","answer":"Yes"},{"question":"Do you have worked with following technologies","answer":"Java, Java Spring Boot, Mongodb, Aws"},{"question":"What is your experience","answer":"fffd"}]
+[09-May-2025 08:55:29 Europe/Berlin] POST data: Array
+(
+    [job_id] => 41
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 30
+    [salaryPackage] => on
+    [screening_questions] => [{"question":"Do u have experience with Asp.net core?","answer":"Yes"}]
+)
+
+[09-May-2025 08:55:29 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => Arbaz PM Review.docx
+            [type] => application/vnd.openxmlformats-officedocument.wordprocessingml.document
+            [tmp_name] => C:\xampp\tmp\php198D.tmp
+            [error] => 0
+            [size] => 18064
+        )
+
+)
+
+[09-May-2025 08:55:29 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"30"},{"question":"Do you agree with the salary package","answer":"on"},{"question":"Do u have experience with Asp.net core?","answer":"Yes"}]
+[14-May-2025 12:42:46 Europe/Berlin] POST data: Array
+(
+    [job_id] => 47
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 4
+    [linkedin_profile] => https://www.linkedin.com/in/arbaz-khan-a75a10247/
+    [noticePeriod] => 39
+    [salaryPackage] => on
+    [screening_questions] => [{"question":"Prior Aviation experience","answer":"Yes"},{"question":"Have you worked with","answer":["MySQL","MongoDB","Oracle SQL"]}]
+)
+
+[14-May-2025 12:42:46 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => Tibco Solutions.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpF4BD.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[14-May-2025 12:42:46 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"39"},{"question":"Do you agree with the salary package","answer":"on"},{"question":"Prior Aviation experience","answer":"Yes"},{"question":"Have you worked with","answer":"MySQL, MongoDB, Oracle SQL"}]
+[15-May-2025 08:43:44 Europe/Berlin] POST data: Array
+(
+    [job_id] => 47
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => https://www.linkedin.com/in/arbaz-khan-a75a10247/
+    [noticePeriod] => 2
+    [salaryPackage] => on
+    [screening_questions] => [{"question":"Prior Aviation experience","answer":"Yes"},{"question":"Have you worked with","answer":["MySQL","MongoDB"]}]
+)
+
+[15-May-2025 08:43:44 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (1).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php78D1.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[15-May-2025 08:43:44 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"2"},{"question":"Do you agree with the salary package","answer":"on"},{"question":"Prior Aviation experience","answer":"Yes"},{"question":"Have you worked with","answer":"MySQL, MongoDB"}]
+[15-May-2025 09:18:12 Europe/Berlin] POST data: Array
+(
+    [job_id] => 48
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => https://www.linkedin.com/in/arbaz-khan-a75a10247/
+    [noticePeriod] => 22
+    [salaryPackage] => on
+    [screening_questions] => [{"question":"67","answer":["67","67"]}]
+)
+
+[15-May-2025 09:18:13 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (1).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpA0F.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[15-May-2025 09:18:13 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"22"},{"question":"Do you agree with the salary package","answer":"on"},{"question":"67","answer":"67, 67"}]
+[15-May-2025 12:13:26 Europe/Berlin] POST data: Array
+(
+    [job_id] => 50
+    [fullName] => luqman
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => https://www.linkedin.com/in/arbaz-khan-a75a10247/
+    [noticePeriod] => 30
+    [salaryPackage] => on
+    [screening_questions] => [{"question":"sd","answer":["ff"]}]
+)
+
+[15-May-2025 12:13:26 Europe/Berlin] POST data: Array
+(
+    [job_id] => 50
+    [fullName] => luqman
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => https://www.linkedin.com/in/arbaz-khan-a75a10247/
+    [noticePeriod] => 30
+    [salaryPackage] => on
+    [screening_questions] => [{"question":"sd","answer":["ff"]}]
+)
+
+[15-May-2025 12:13:26 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (1).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php74A9.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[15-May-2025 12:13:26 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (1).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php74A8.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[15-May-2025 12:13:26 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"30"},{"question":"Do you agree with the salary package","answer":"on"},{"question":"sd","answer":"ff"}]
+[15-May-2025 12:13:26 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"30"},{"question":"Do you agree with the salary package","answer":"on"},{"question":"sd","answer":"ff"}]
+[16-May-2025 06:45:05 Europe/Berlin] POST data: Array
+(
+    [job_id] => 51
+    [fullName] => umer
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 30
+    [salaryPackage] => on
+    [screening_questions] => [{"question":"er","answer":"No"}]
+)
+
+[16-May-2025 06:45:05 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (1).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php33B1.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[16-May-2025 06:45:05 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"30"},{"question":"Do you agree with the salary package","answer":"on"},{"question":"er","answer":"No"}]
+[16-May-2025 06:57:17 Europe/Berlin] POST data: Array
+(
+    [job_id] => 52
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => dasda
+    [noticePeriod] => 30
+    [salaryPackage] => on
+    [screening_questions] => []
+)
+
+[16-May-2025 06:57:17 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (1).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php5F12.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[16-May-2025 06:57:17 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"30"},{"question":"Do you agree with the salary package","answer":"on"}]
+[16-May-2025 06:59:30 Europe/Berlin] POST data: Array
+(
+    [job_id] => 53
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => https://www.linkedin.com/in/arbaz-khan-a75a10247/
+    [noticePeriod] => 30
+    [salaryPackage] => on
+    [screening_questions] => []
+)
+
+[16-May-2025 06:59:30 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (1).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php689F.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[16-May-2025 06:59:30 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"30"},{"question":"Do you agree with the salary package","answer":"on"}]
+[16-May-2025 06:59:51 Europe/Berlin] POST data: Array
+(
+    [job_id] => 53
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 30
+    [salaryPackage] => on
+    [screening_questions] => []
+)
+
+[16-May-2025 06:59:51 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (1).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpB9CD.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[16-May-2025 06:59:51 Europe/Berlin] Missing required field: phoneNo
+[16-May-2025 06:59:51 Europe/Berlin] Exception: Missing required field: phoneNo in C:\xampp\htdocs\recruitment\admin\save_application.php on line 55
+[16-May-2025 07:00:07 Europe/Berlin] POST data: Array
+(
+    [job_id] => 53
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 30
+    [salaryPackage] => on
+    [screening_questions] => []
+)
+
+[16-May-2025 07:00:07 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (1).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpF84E.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[16-May-2025 07:00:07 Europe/Berlin] Duplicate application attempt: Email muhammadarbazkhan2@gmail.com for job_id 53
+[16-May-2025 07:00:07 Europe/Berlin] Exception: You have already applied for this job with this email in C:\xampp\htdocs\recruitment\admin\save_application.php on line 80
+[16-May-2025 07:00:13 Europe/Berlin] POST data: Array
+(
+    [job_id] => 53
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 30
+    [salaryPackage] => on
+    [screening_questions] => []
+)
+
+[16-May-2025 07:00:13 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (1).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php1155.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[16-May-2025 07:00:13 Europe/Berlin] Duplicate application attempt: Email muhammadarbazkhan2@gmail.com for job_id 53
+[16-May-2025 07:00:13 Europe/Berlin] Exception: You have already applied for this job with this email in C:\xampp\htdocs\recruitment\admin\save_application.php on line 80
+[16-May-2025 07:01:36 Europe/Berlin] POST data: Array
+(
+    [job_id] => 53
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 30
+    [salaryPackage] => on
+    [screening_questions] => []
+)
+
+[16-May-2025 07:01:36 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (1).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php5427.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[16-May-2025 07:01:36 Europe/Berlin] Duplicate application attempt: Email muhammadarbazkhan2@gmail.com for job_id 53
+[16-May-2025 07:01:36 Europe/Berlin] Exception: You have already applied for this job with this email in C:\xampp\htdocs\recruitment\admin\save_application.php on line 80
+[16-May-2025 07:02:30 Europe/Berlin] POST data: Array
+(
+    [job_id] => 53
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 30
+    [salaryPackage] => on
+    [screening_questions] => []
+)
+
+[16-May-2025 07:02:30 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (1).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php260F.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[16-May-2025 07:02:30 Europe/Berlin] Duplicate application attempt: Email muhammadarbazkhan2@gmail.com for job_id 53
+[16-May-2025 07:02:30 Europe/Berlin] Exception: You have already applied for this job with this email in C:\xampp\htdocs\recruitment\admin\save_application.php on line 80
+[16-May-2025 07:02:48 Europe/Berlin] POST data: Array
+(
+    [job_id] => 53
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 30
+    [salaryPackage] => on
+    [screening_questions] => []
+)
+
+[16-May-2025 07:02:48 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (1).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php6DA9.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[16-May-2025 07:02:48 Europe/Berlin] Duplicate application attempt: Email muhammadarbazkhan2@gmail.com for job_id 53
+[16-May-2025 07:02:48 Europe/Berlin] Exception: You have already applied for this job with this email in C:\xampp\htdocs\recruitment\admin\save_application.php on line 80
+[16-May-2025 07:03:00 Europe/Berlin] POST data: Array
+(
+    [job_id] => 53
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 30
+    [salaryPackage] => on
+    [screening_questions] => []
+)
+
+[16-May-2025 07:03:00 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (1).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php9E6E.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[16-May-2025 07:03:00 Europe/Berlin] Duplicate application attempt: Email muhammadarbazkhan2@gmail.com for job_id 53
+[16-May-2025 07:03:00 Europe/Berlin] Exception: You have already applied for this job with this email in C:\xampp\htdocs\recruitment\admin\save_application.php on line 80
+[16-May-2025 07:04:39 Europe/Berlin] POST data: Array
+(
+    [job_id] => 53
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 30
+    [salaryPackage] => on
+    [screening_questions] => []
+)
+
+[16-May-2025 07:04:39 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (1).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php204E.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[16-May-2025 07:04:39 Europe/Berlin] Duplicate application attempt: Email muhammadarbazkhan2@gmail.com for job_id 53
+[16-May-2025 07:04:39 Europe/Berlin] Exception: You have already applied for this job with this email in C:\xampp\htdocs\recruitment\admin\save_application.php on line 80
+[16-May-2025 07:05:52 Europe/Berlin] POST data: Array
+(
+    [job_id] => 53
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 30
+    [salaryPackage] => on
+    [screening_questions] => []
+)
+
+[16-May-2025 07:05:52 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (1).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php3D48.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[16-May-2025 07:05:52 Europe/Berlin] Duplicate application attempt: Email muhammadarbazkhan2@gmail.com for job_id 53
+[16-May-2025 07:05:52 Europe/Berlin] Exception: You have already applied for this job in C:\xampp\htdocs\recruitment\admin\save_application.php on line 80
+[16-May-2025 07:06:19 Europe/Berlin] POST data: Array
+(
+    [job_id] => 53
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 30
+    [salaryPackage] => on
+    [screening_questions] => []
+)
+
+[16-May-2025 07:06:19 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (1).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpA77D.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[16-May-2025 07:06:19 Europe/Berlin] Duplicate application attempt: Email muhammadarbazkhan2@gmail.com for job_id 53
+[16-May-2025 07:06:19 Europe/Berlin] Exception: You have already applied for this job in C:\xampp\htdocs\recruitment\admin\save_application.php on line 80
+[16-May-2025 07:06:35 Europe/Berlin] POST data: Array
+(
+    [job_id] => 53
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 30
+    [salaryPackage] => on
+    [screening_questions] => []
+)
+
+[16-May-2025 07:06:35 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (1).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpE3BC.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[16-May-2025 07:06:35 Europe/Berlin] Duplicate application attempt: Email muhammadarbazkhan2@gmail.com for job_id 53
+[16-May-2025 07:06:35 Europe/Berlin] Exception: You have already applied for this job in C:\xampp\htdocs\recruitment\admin\save_application.php on line 80
+[16-May-2025 07:07:36 Europe/Berlin] POST data: Array
+(
+    [job_id] => 53
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 30
+    [salaryPackage] => on
+    [screening_questions] => []
+)
+
+[16-May-2025 07:07:36 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (1).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpD0FC.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[16-May-2025 07:07:36 Europe/Berlin] Duplicate application attempt: Email muhammadarbazkhan2@gmail.com for job_id 53
+[16-May-2025 07:07:36 Europe/Berlin] Exception: You have already applied for this job in C:\xampp\htdocs\recruitment\admin\save_application.php on line 80
+[16-May-2025 07:08:29 Europe/Berlin] POST data: Array
+(
+    [job_id] => 53
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 30
+    [salaryPackage] => on
+    [screening_questions] => []
+)
+
+[16-May-2025 07:08:29 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (1).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpA2E3.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[16-May-2025 07:08:29 Europe/Berlin] Duplicate application attempt: Email muhammadarbazkhan2@gmail.com for job_id 53
+[16-May-2025 07:08:29 Europe/Berlin] Exception: You have already applied for this job in C:\xampp\htdocs\recruitment\admin\save_application.php on line 80
+[16-May-2025 07:09:05 Europe/Berlin] POST data: Array
+(
+    [job_id] => 52
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 30
+    [salaryPackage] => on
+    [screening_questions] => []
+)
+
+[16-May-2025 07:09:05 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (1).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php2D90.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[16-May-2025 07:09:05 Europe/Berlin] Duplicate application attempt: Email muhammadarbazkhan2@gmail.com for job_id 52
+[16-May-2025 07:09:05 Europe/Berlin] Exception: You have already applied for this job in C:\xampp\htdocs\recruitment\admin\save_application.php on line 80
+[16-May-2025 07:09:39 Europe/Berlin] POST data: Array
+(
+    [job_id] => 53
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 30
+    [salaryPackage] => on
+    [screening_questions] => []
+)
+
+[16-May-2025 07:09:39 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (1).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpB31D.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[16-May-2025 07:09:39 Europe/Berlin] Duplicate application attempt: Email muhammadarbazkhan2@gmail.com for job_id 53
+[16-May-2025 07:09:39 Europe/Berlin] Exception: You have already applied for this job in C:\xampp\htdocs\recruitment\admin\save_application.php on line 80
+[16-May-2025 07:09:47 Europe/Berlin] POST data: Array
+(
+    [job_id] => 53
+    [fullName] => arbaz khan
+    [email] => arbaz.khan@cinergiedigital.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 30
+    [salaryPackage] => on
+    [screening_questions] => []
+)
+
+[16-May-2025 07:09:47 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (1).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpD404.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[16-May-2025 07:09:47 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"30"},{"question":"Do you agree with the salary package","answer":"on"}]
+[16-May-2025 07:10:14 Europe/Berlin] POST data: Array
+(
+    [job_id] => 52
+    [fullName] => arbaz khan
+    [email] => arbaz.khan@cinergiedigital.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 30
+    [salaryPackage] => on
+    [screening_questions] => []
+)
+
+[16-May-2025 07:10:14 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (1).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php3ABE.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[16-May-2025 07:10:14 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"30"},{"question":"Do you agree with the salary package","answer":"on"}]
+[16-May-2025 07:10:36 Europe/Berlin] POST data: Array
+(
+    [job_id] => 52
+    [fullName] => 
+    [email] => arbaz.khan@cinergiedigital.com
+    [phoneNo] => 03020473547
+    [experience] => -1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 30
+    [salaryPackage] => on
+    [screening_questions] => []
+)
+
+[16-May-2025 07:10:36 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (1).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php9199.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[16-May-2025 07:10:36 Europe/Berlin] Missing required field: fullName
+[16-May-2025 07:10:36 Europe/Berlin] Exception: Missing required field: fullName in C:\xampp\htdocs\recruitment\admin\save_application.php on line 55
+[16-May-2025 07:10:43 Europe/Berlin] POST data: Array
+(
+    [job_id] => 52
+    [fullName] => arbaz khan
+    [email] => arbaz.khan@cinergiedigital.com
+    [phoneNo] => 03020473547
+    [experience] => -1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 30
+    [salaryPackage] => on
+    [screening_questions] => []
+)
+
+[16-May-2025 07:10:43 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (1).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpAD31.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[16-May-2025 07:10:43 Europe/Berlin] Duplicate application attempt: Email arbaz.khan@cinergiedigital.com for job_id 52
+[16-May-2025 07:10:43 Europe/Berlin] Exception: You have already applied for this job in C:\xampp\htdocs\recruitment\admin\save_application.php on line 80
+[16-May-2025 08:46:01 Europe/Berlin] POST data: Array
+(
+    [job_id] => 52
+    [fullName] => arbaz khan
+    [email] => arbaz.khan@cinergiedigital.com
+    [phoneNo] => 03020473547
+    [experience] => -1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 30
+    [salaryPackage] => on
+    [screening_questions] => []
+)
+
+[16-May-2025 08:46:01 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (1).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpEC85.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[16-May-2025 08:46:01 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"30"},{"question":"Do you agree with the salary package","answer":"on"}]
+[16-May-2025 08:46:01 Europe/Berlin] Exception: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`testingsystem`.`applications`, CONSTRAINT `applications_ibfk_1` FOREIGN KEY (`job_id`) REFERENCES `jobs` (`job_id`) ON DELETE SET NULL) in C:\xampp\htdocs\recruitment\admin\save_application.php on line 155
+[16-May-2025 08:59:00 Europe/Berlin] POST data: Array
+(
+    [job_id] => 54
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 30
+    [salaryPackage] => on
+    [reference] => rr
+    [job_title] => DevOps Engineer
+    [screening_questions] => []
+)
+
+[16-May-2025 08:59:00 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (1).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpCF5F.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[16-May-2025 08:59:00 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"30"},{"question":"Do you agree with the salary package","answer":"on"}]
+[16-May-2025 08:59:00 Europe/Berlin] Exception: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in C:\xampp\htdocs\recruitment\admin\save_application.php on line 159
+[16-May-2025 09:02:21 Europe/Berlin] POST data: Array
+(
+    [job_id] => 54
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 30
+    [salaryPackage] => on
+    [reference] => rr
+    [job_title] => DevOps Engineer
+    [screening_questions] => []
+)
+
+[16-May-2025 09:02:21 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (1).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpE22E.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[16-May-2025 09:02:21 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"30"},{"question":"Do you agree with the salary package","answer":"on"}]
+[16-May-2025 09:02:21 Europe/Berlin] Exception: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in C:\xampp\htdocs\recruitment\admin\save_application.php on line 159
+[16-May-2025 09:21:47 Europe/Berlin] POST data: Array
+(
+    [job_id] => 54
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 2
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 30
+    [salaryPackage] => on
+    [reference] => rr
+    [job_title] => DevOps Engineer
+    [screening_questions] => []
+)
+
+[16-May-2025 09:21:47 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpAA02.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[16-May-2025 09:21:47 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"30"},{"question":"Do you agree with the salary package","answer":"on"}]
+[16-May-2025 09:21:47 Europe/Berlin] PHP Warning:  Undefined variable $submitted_at in C:\xampp\htdocs\recruitment\admin\save_application.php on line 159
+[16-May-2025 09:21:47 Europe/Berlin] Exception: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in C:\xampp\htdocs\recruitment\admin\save_application.php on line 160
+[16-May-2025 09:24:11 Europe/Berlin] Database connection established successfully
+[16-May-2025 09:24:11 Europe/Berlin] POST data: Array
+(
+    [job_id] => 54
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 0
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 30
+    [salaryPackage] => on
+    [reference] => rr
+    [job_title] => DevOps Engineer
+    [screening_questions] => []
+)
+
+[16-May-2025 09:24:11 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (3).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpDD3E.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[16-May-2025 09:24:11 Europe/Berlin] Raw reference: rr
+[16-May-2025 09:24:11 Europe/Berlin] Raw job_title: DevOps Engineer
+[16-May-2025 09:24:11 Europe/Berlin] Decoded reference: rr
+[16-May-2025 09:24:11 Europe/Berlin] Decoded job_title: DevOps Engineer
+[16-May-2025 09:24:11 Europe/Berlin] Encoded reference_json: "rr"
+[16-May-2025 09:24:11 Europe/Berlin] Encoded job_title_json: "DevOps Engineer"
+[16-May-2025 09:24:11 Europe/Berlin] Missing required field: experience
+[16-May-2025 09:24:11 Europe/Berlin] Exception: Missing required field: experience in C:\xampp\htdocs\recruitment\admin\save_application.php on line 86
+[16-May-2025 09:24:32 Europe/Berlin] Database connection established successfully
+[16-May-2025 09:24:32 Europe/Berlin] POST data: Array
+(
+    [job_id] => 54
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 0
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 30
+    [salaryPackage] => on
+    [reference] => rr
+    [job_title] => DevOps Engineer
+    [screening_questions] => []
+)
+
+[16-May-2025 09:24:32 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (3).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php3199.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[16-May-2025 09:24:32 Europe/Berlin] Raw reference: rr
+[16-May-2025 09:24:32 Europe/Berlin] Raw job_title: DevOps Engineer
+[16-May-2025 09:24:32 Europe/Berlin] Decoded reference: rr
+[16-May-2025 09:24:32 Europe/Berlin] Decoded job_title: DevOps Engineer
+[16-May-2025 09:24:32 Europe/Berlin] Encoded reference_json: "rr"
+[16-May-2025 09:24:32 Europe/Berlin] Encoded job_title_json: "DevOps Engineer"
+[16-May-2025 09:24:32 Europe/Berlin] Missing required field: experience
+[16-May-2025 09:24:32 Europe/Berlin] Exception: Missing required field: experience in C:\xampp\htdocs\recruitment\admin\save_application.php on line 86
+[16-May-2025 09:25:31 Europe/Berlin] Database connection established successfully
+[16-May-2025 09:25:31 Europe/Berlin] POST data: Array
+(
+    [job_id] => 54
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 3
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 30
+    [salaryPackage] => on
+    [reference] => rr
+    [job_title] => DevOps Engineer
+    [screening_questions] => []
+)
+
+[16-May-2025 09:25:31 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (2).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php1562.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[16-May-2025 09:25:31 Europe/Berlin] Raw reference: rr
+[16-May-2025 09:25:31 Europe/Berlin] Raw job_title: DevOps Engineer
+[16-May-2025 09:25:31 Europe/Berlin] Decoded reference: rr
+[16-May-2025 09:25:31 Europe/Berlin] Decoded job_title: DevOps Engineer
+[16-May-2025 09:25:31 Europe/Berlin] Encoded reference_json: "rr"
+[16-May-2025 09:25:31 Europe/Berlin] Encoded job_title_json: "DevOps Engineer"
+[16-May-2025 09:25:31 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"30"},{"question":"Do you agree with the salary package","answer":"on"}]
+[16-May-2025 09:25:31 Europe/Berlin] Executing SQL with parameters: {"job_id":54,"full_name":"arbaz khan","email":"muhammadarbazkhan2@gmail.com","phone_no":"03020473547","experience":3,"linkedin":"linkedIn.com","cv_path":"Uploads\/6826e86b11b4b_682473a6869ce_Tibco Solutions (2).pdf","answers_json":"[{\"question\":\"What is your current notice period\",\"answer\":\"30\"},{\"question\":\"Do you agree with the salary package\",\"answer\":\"on\"}]","reference_json":"\"rr\"","job_title_json":"\"DevOps Engineer\""}
+[16-May-2025 09:25:31 Europe/Berlin] Exception: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in C:\xampp\htdocs\recruitment\admin\save_application.php on line 192
+[16-May-2025 09:30:59 Europe/Berlin] POST data: Array
+(
+    [job_id] => 54
+    [fullName] => arbaz khan
+    [email] => arbaz.khan@cinergiedigital.com
+    [phoneNo] => 03020473547
+    [experience] => 4
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 30
+    [salaryPackage] => on
+    [reference] => rr
+    [job_title] => DevOps Engineer
+    [screening_questions] => []
+)
+
+[16-May-2025 09:30:59 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (1).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php16E2.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[16-May-2025 09:30:59 Europe/Berlin] PHP Warning:  Undefined variable $reference in C:\xampp\htdocs\recruitment\admin\save_application.php on line 49
+[16-May-2025 09:30:59 Europe/Berlin] PHP Warning:  Undefined variable $job_title in C:\xampp\htdocs\recruitment\admin\save_application.php on line 50
+[16-May-2025 09:30:59 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"30"},{"question":"Do you agree with the salary package","answer":"on"}]
+[16-May-2025 09:43:38 Europe/Berlin] POST data: Array
+(
+    [job_id] => 54
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 12
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 30
+    [salaryPackage] => on
+    [reference] => rr
+    [job_title] => DevOps Engineer
+    [screening_questions] => []
+)
+
+[16-May-2025 09:43:38 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (3).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpAAF0.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[16-May-2025 09:43:38 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"30"},{"question":"Do you agree with the salary package","answer":"on"}]
+[16-May-2025 11:53:48 Europe/Berlin] POST data: Array
+(
+    [job_id] => 55
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 30
+    [salaryPackage] => on
+    [reference] => FZ-AE-32
+    [job_title] => Database Developer
+    [screening_questions] => [{"question":"do y work wit","answer":"Yes"}]
+)
+
+[16-May-2025 11:53:48 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 6826ecaa314b3_682473a6869ce_Tibco Solutions (3).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpD7DA.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[16-May-2025 11:53:48 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"30"},{"question":"Do you agree with the salary package","answer":"on"},{"question":"do y work wit","answer":"Yes"}]
+[18-May-2025 04:43:48 Europe/Berlin] POST data: Array
+(
+    [job_id] => 57
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 39
+    [salaryPackage] => on
+    [reference] => sa
+    [job_title] => net dev
+    [screening_questions] => [{"question":"do y work wit","answer":"Yes"}]
+)
+
+[18-May-2025 04:43:48 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php7BC6.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[18-May-2025 04:43:48 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"39"},{"question":"Do you agree with the salary package","answer":"on"},{"question":"do y work wit","answer":"Yes"}]
+[19-May-2025 07:06:06 Europe/Berlin] POST data: Array
+(
+    [job_id] => 58
+    [fullName] => arbaz khan
+    [email] => admin@example.com
+    [phoneNo] => 03020473547
+    [experience] => 0
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 30
+    [salaryPackage] => on
+    [reference] => FZ-AE-32
+    [job_title] => Business Analyst
+    [screening_questions] => []
+)
+
+[19-May-2025 07:06:06 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php20AE.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[19-May-2025 07:06:06 Europe/Berlin] Missing required field: experience
+[19-May-2025 07:06:06 Europe/Berlin] Exception: Missing required field: experience in C:\xampp\htdocs\recruitment\admin\save_application.php on line 59
+[19-May-2025 07:06:13 Europe/Berlin] POST data: Array
+(
+    [job_id] => 58
+    [fullName] => arbaz khan
+    [email] => admin@example.com
+    [phoneNo] => 03020473547
+    [experience] => 01
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 30
+    [salaryPackage] => on
+    [reference] => FZ-AE-32
+    [job_title] => Business Analyst
+    [screening_questions] => []
+)
+
+[19-May-2025 07:06:13 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php3CE2.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[19-May-2025 07:06:13 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"30"},{"question":"Do you agree with the salary package","answer":"on"}]
+[19-May-2025 07:06:35 Europe/Berlin] POST data: Array
+(
+    [job_id] => 58
+    [fullName] => arbaz khan
+    [email] => arbaz.khan@cinergiedigital.com
+    [phoneNo] => 
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 39
+    [salaryPackage] => on
+    [reference] => FZ-AE-32
+    [job_title] => Business Analyst
+    [screening_questions] => []
+)
+
+[19-May-2025 07:06:35 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php9053.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[19-May-2025 07:06:35 Europe/Berlin] Missing required field: phoneNo
+[19-May-2025 07:06:35 Europe/Berlin] Exception: Missing required field: phoneNo in C:\xampp\htdocs\recruitment\admin\save_application.php on line 59
+[19-May-2025 07:06:42 Europe/Berlin] POST data: Array
+(
+    [job_id] => 58
+    [fullName] => arbaz khan
+    [email] => arbaz.khan@cinergiedigital.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 39
+    [salaryPackage] => on
+    [reference] => FZ-AE-32
+    [job_title] => Business Analyst
+    [screening_questions] => []
+)
+
+[19-May-2025 07:06:42 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpAC57.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[19-May-2025 07:06:42 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"39"},{"question":"Do you agree with the salary package","answer":"on"}]
+[19-May-2025 07:07:50 Europe/Berlin] POST data: Array
+(
+    [job_id] => 58
+    [fullName] => arbaz khan
+    [email] => admin@example.com
+    [phoneNo] => 
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 14
+    [salaryPackage] => on
+    [reference] => FZ-AE-32
+    [job_title] => Business Analyst
+    [screening_questions] => []
+)
+
+[19-May-2025 07:07:50 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (1).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpB51E.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[19-May-2025 07:07:50 Europe/Berlin] Missing required field: phoneNo
+[19-May-2025 07:07:50 Europe/Berlin] Exception: Missing required field: phoneNo in C:\xampp\htdocs\recruitment\admin\save_application.php on line 59
+[19-May-2025 07:07:57 Europe/Berlin] POST data: Array
+(
+    [job_id] => 58
+    [fullName] => arbaz khan
+    [email] => admin@example.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 14
+    [salaryPackage] => on
+    [reference] => FZ-AE-32
+    [job_title] => Business Analyst
+    [screening_questions] => []
+)
+
+[19-May-2025 07:07:57 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (1).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpCFDA.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[19-May-2025 07:07:57 Europe/Berlin] Duplicate application attempt: Email admin@example.com for job_id 58
+[19-May-2025 07:07:57 Europe/Berlin] Exception: You have already applied for this job in C:\xampp\htdocs\recruitment\admin\save_application.php on line 84
+[19-May-2025 07:08:15 Europe/Berlin] POST data: Array
+(
+    [job_id] => 58
+    [fullName] => arbaz khan
+    [email] => john@example.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 14
+    [salaryPackage] => on
+    [reference] => FZ-AE-32
+    [job_title] => Business Analyst
+    [screening_questions] => []
+)
+
+[19-May-2025 07:08:15 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (1).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php186E.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[19-May-2025 07:08:15 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"14"},{"question":"Do you agree with the salary package","answer":"on"}]
+[19-May-2025 07:15:14 Europe/Berlin] POST data: Array
+(
+    [job_id] => 58
+    [fullName] => arbaz khan
+    [email] => umer@cinergiedigital.com
+    [phoneNo] => 
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 39
+    [salaryPackage] => on
+    [reference] => FZ-AE-32
+    [job_title] => Business Analyst
+    [screening_questions] => []
+)
+
+[19-May-2025 07:15:14 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (1).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php7A96.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[19-May-2025 07:15:14 Europe/Berlin] Missing required field: phoneNo
+[19-May-2025 07:15:14 Europe/Berlin] Exception: Missing required field: phoneNo in C:\xampp\htdocs\recruitment\admin\save_application.php on line 59
+[19-May-2025 07:15:20 Europe/Berlin] POST data: Array
+(
+    [job_id] => 58
+    [fullName] => arbaz khan
+    [email] => umer@cinergiedigital.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 39
+    [salaryPackage] => on
+    [reference] => FZ-AE-32
+    [job_title] => Business Analyst
+    [screening_questions] => []
+)
+
+[19-May-2025 07:15:20 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (1).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php93CC.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[19-May-2025 07:15:20 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"39"},{"question":"Do you agree with the salary package","answer":"on"}]
+[19-May-2025 07:25:29 Europe/Berlin] POST data: Array
+(
+    [job_id] => 58
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 22
+    [salaryPackage] => No
+    [reference] => FZ-AE-32
+    [job_title] => Business Analyst
+    [screening_questions] => []
+)
+
+[19-May-2025 07:25:29 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpDF04.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[19-May-2025 07:25:29 Europe/Berlin] Missing required field: phoneNo
+[19-May-2025 07:25:29 Europe/Berlin] Exception: Missing required field: phoneNo in C:\xampp\htdocs\recruitment\admin\save_application.php on line 57
+[19-May-2025 07:25:37 Europe/Berlin] POST data: Array
+(
+    [job_id] => 58
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 22
+    [salaryPackage] => No
+    [reference] => FZ-AE-32
+    [job_title] => Business Analyst
+    [screening_questions] => []
+)
+
+[19-May-2025 07:25:37 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpFF00.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[19-May-2025 07:25:37 Europe/Berlin] Answers array: Array
+(
+    [0] => Array
+        (
+            [question] => What is your current notice period
+            [answer] => 22
+        )
+
+    [1] => Array
+        (
+            [question] => Do you agree with the salary package
+            [answer] => No
+        )
+
+)
+
+[19-May-2025 07:25:37 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"22"},{"question":"Do you agree with the salary package","answer":"No"}]
+[19-May-2025 07:26:34 Europe/Berlin] POST data: Array
+(
+    [job_id] => 58
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 22
+    [salaryPackage] => Yes
+    [reference] => FZ-AE-32
+    [job_title] => Business Analyst
+    [screening_questions] => []
+)
+
+[19-May-2025 07:26:34 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpDC90.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[19-May-2025 07:26:34 Europe/Berlin] Answers array: Array
+(
+    [0] => Array
+        (
+            [question] => What is your current notice period
+            [answer] => 22
+        )
+
+    [1] => Array
+        (
+            [question] => Do you agree with the salary package
+            [answer] => Yes
+        )
+
+)
+
+[19-May-2025 07:26:34 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"22"},{"question":"Do you agree with the salary package","answer":"Yes"}]
+[19-May-2025 07:27:18 Europe/Berlin] POST data: Array
+(
+    [job_id] => 58
+    [fullName] => arbaz khan
+    [email] => umer@cinergiedigital.com
+    [phoneNo] => 
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 2
+    [salaryPackage] => No
+    [reference] => FZ-AE-32
+    [job_title] => Business Analyst
+    [screening_questions] => []
+)
+
+[19-May-2025 07:27:18 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (2).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php8A84.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[19-May-2025 07:27:18 Europe/Berlin] Missing required field: phoneNo
+[19-May-2025 07:27:18 Europe/Berlin] Exception: Missing required field: phoneNo in C:\xampp\htdocs\recruitment\admin\save_application.php on line 57
+[19-May-2025 07:27:23 Europe/Berlin] POST data: Array
+(
+    [job_id] => 58
+    [fullName] => arbaz khan
+    [email] => umer@cinergiedigital.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 2
+    [salaryPackage] => No
+    [reference] => FZ-AE-32
+    [job_title] => Business Analyst
+    [screening_questions] => []
+)
+
+[19-May-2025 07:27:23 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (2).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php9DBF.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[19-May-2025 07:27:23 Europe/Berlin] Answers array: Array
+(
+    [0] => Array
+        (
+            [question] => What is your current notice period
+            [answer] => 2
+        )
+
+    [1] => Array
+        (
+            [question] => Do you agree with the salary package
+            [answer] => No
+        )
+
+)
+
+[19-May-2025 07:27:23 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"2"},{"question":"Do you agree with the salary package","answer":"No"}]
+[19-May-2025 07:44:23 Europe/Berlin] POST data: Array
+(
+    [job_id] => 58
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 14
+    [salaryPackage] => Yes
+    [reference] => FZ-AE-32
+    [job_title] => Business Analyst
+    [screening_questions] => []
+)
+
+[19-May-2025 07:44:23 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (2).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php2DB3.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[19-May-2025 07:44:23 Europe/Berlin] Duplicate application: Email muhammadarbazkhan2@gmail.com for job_id 58
+[19-May-2025 07:44:23 Europe/Berlin] Exception: You have already applied for this job in C:\xampp\htdocs\recruitment\admin\save_application.php on line 88
+[19-May-2025 07:45:22 Europe/Berlin] POST data: Array
+(
+    [job_id] => 58
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 14
+    [salaryPackage] => Yes
+    [reference] => FZ-AE-32
+    [job_title] => Business Analyst
+    [screening_questions] => []
+)
+
+[19-May-2025 07:45:22 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (2).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php12D4.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[19-May-2025 07:45:22 Europe/Berlin] Duplicate application: Email muhammadarbazkhan2@gmail.com for job_id 58
+[19-May-2025 07:45:22 Europe/Berlin] Exception: You have already applied for this job in C:\xampp\htdocs\recruitment\admin\save_application.php on line 88
+[19-May-2025 07:45:43 Europe/Berlin] POST data: Array
+(
+    [job_id] => 58
+    [fullName] => arbaz khan
+    [email] => admin@example.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 14
+    [salaryPackage] => Yes
+    [reference] => FZ-AE-32
+    [job_title] => Business Analyst
+    [screening_questions] => []
+)
+
+[19-May-2025 07:45:43 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (2).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php6450.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[19-May-2025 07:45:43 Europe/Berlin] Answers array: Array
+(
+    [0] => Array
+        (
+            [question] => What is your current notice period
+            [answer] => 14
+        )
+
+    [1] => Array
+        (
+            [question] => Do you agree with the salary package
+            [answer] => Yes
+        )
+
+)
+
+[19-May-2025 07:45:43 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"14"},{"question":"Do you agree with the salary package","answer":"Yes"}]
+[19-May-2025 07:46:08 Europe/Berlin] POST data: Array
+(
+    [job_id] => 58
+    [fullName] => arbaz khan
+    [email] => john@example.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 12
+    [salaryPackage] => No
+    [reference] => FZ-AE-32
+    [job_title] => Business Analyst
+    [screening_questions] => []
+)
+
+[19-May-2025 07:46:08 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (1).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpC7ED.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[19-May-2025 07:46:08 Europe/Berlin] Answers array: Array
+(
+    [0] => Array
+        (
+            [question] => What is your current notice period
+            [answer] => 12
+        )
+
+    [1] => Array
+        (
+            [question] => Do you agree with the salary package
+            [answer] => No
+        )
+
+)
+
+[19-May-2025 07:46:08 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"12"},{"question":"Do you agree with the salary package","answer":"No"}]
+[19-May-2025 07:46:31 Europe/Berlin] POST data: Array
+(
+    [job_id] => 58
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 14
+    [salaryPackage] => Yes
+    [reference] => FZ-AE-32
+    [job_title] => Business Analyst
+    [screening_questions] => []
+)
+
+[19-May-2025 07:46:31 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (2).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php22B1.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[19-May-2025 07:46:31 Europe/Berlin] Duplicate application: Email muhammadarbazkhan2@gmail.com for job_id 58
+[19-May-2025 07:46:31 Europe/Berlin] Exception: You have already applied for this job in C:\xampp\htdocs\recruitment\admin\save_application.php on line 88
+[19-May-2025 07:46:39 Europe/Berlin] POST data: Array
+(
+    [job_id] => 58
+    [fullName] => arbaz khan
+    [email] => umer@cinergiedigital.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 14
+    [salaryPackage] => Yes
+    [reference] => FZ-AE-32
+    [job_title] => Business Analyst
+    [screening_questions] => []
+)
+
+[19-May-2025 07:46:39 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (2).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php4165.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[19-May-2025 07:46:39 Europe/Berlin] Duplicate application: Email umer@cinergiedigital.com for job_id 58
+[19-May-2025 07:46:39 Europe/Berlin] Exception: You have already applied for this job in C:\xampp\htdocs\recruitment\admin\save_application.php on line 88
+[19-May-2025 07:47:41 Europe/Berlin] POST data: Array
+(
+    [job_id] => 58
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 14
+    [salaryPackage] => Yes
+    [reference] => FZ-AE-32
+    [job_title] => Business Analyst
+    [screening_questions] => []
+)
+
+[19-May-2025 07:47:41 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (2).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php3377.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[19-May-2025 07:47:41 Europe/Berlin] Answers array: Array
+(
+    [0] => Array
+        (
+            [question] => What is your current notice period
+            [answer] => 14
+        )
+
+    [1] => Array
+        (
+            [question] => Do you agree with the salary package
+            [answer] => Yes
+        )
+
+)
+
+[19-May-2025 07:47:41 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"14"},{"question":"Do you agree with the salary package","answer":"Yes"}]
+[19-May-2025 07:47:41 Europe/Berlin] Exception: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`testingsystem`.`applications`, CONSTRAINT `applications_ibfk_1` FOREIGN KEY (`job_id`) REFERENCES `jobs` (`job_id`) ON DELETE SET NULL) in C:\xampp\htdocs\recruitment\admin\save_application.php on line 165
+[19-May-2025 07:52:21 Europe/Berlin] POST data: Array
+(
+    [job_id] => 58
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 14
+    [salaryPackage] => Yes
+    [reference] => FZ-AE-32
+    [job_title] => Business Analyst
+    [screening_questions] => []
+)
+
+[19-May-2025 07:52:21 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (2).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php7715.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[19-May-2025 07:52:21 Europe/Berlin] Answers array: Array
+(
+    [0] => Array
+        (
+            [question] => What is your current notice period
+            [answer] => 14
+        )
+
+    [1] => Array
+        (
+            [question] => Do you agree with the salary package
+            [answer] => Yes
+        )
+
+)
+
+[19-May-2025 07:52:21 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"14"},{"question":"Do you agree with the salary package","answer":"Yes"}]
+[19-May-2025 07:52:21 Europe/Berlin] PDOException: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`testingsystem`.`applications`, CONSTRAINT `applications_ibfk_1` FOREIGN KEY (`job_id`) REFERENCES `jobs` (`job_id`) ON DELETE SET NULL) in C:\xampp\htdocs\recruitment\admin\save_application.php on line 165
+[19-May-2025 07:52:42 Europe/Berlin] POST data: Array
+(
+    [job_id] => 58
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 14
+    [salaryPackage] => Yes
+    [reference] => FZ-AE-32
+    [job_title] => Business Analyst
+    [screening_questions] => []
+)
+
+[19-May-2025 07:52:42 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (2).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpC8D0.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[19-May-2025 07:52:42 Europe/Berlin] Answers array: Array
+(
+    [0] => Array
+        (
+            [question] => What is your current notice period
+            [answer] => 14
+        )
+
+    [1] => Array
+        (
+            [question] => Do you agree with the salary package
+            [answer] => Yes
+        )
+
+)
+
+[19-May-2025 07:52:42 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"14"},{"question":"Do you agree with the salary package","answer":"Yes"}]
+[19-May-2025 07:52:42 Europe/Berlin] PDOException: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`testingsystem`.`applications`, CONSTRAINT `applications_ibfk_1` FOREIGN KEY (`job_id`) REFERENCES `jobs` (`job_id`) ON DELETE SET NULL) in C:\xampp\htdocs\recruitment\admin\save_application.php on line 165
+[19-May-2025 07:52:48 Europe/Berlin] POST data: Array
+(
+    [job_id] => 58
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 14
+    [salaryPackage] => Yes
+    [reference] => FZ-AE-32
+    [job_title] => Business Analyst
+    [screening_questions] => []
+)
+
+[19-May-2025 07:52:48 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (2).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpE206.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[19-May-2025 07:52:48 Europe/Berlin] Answers array: Array
+(
+    [0] => Array
+        (
+            [question] => What is your current notice period
+            [answer] => 14
+        )
+
+    [1] => Array
+        (
+            [question] => Do you agree with the salary package
+            [answer] => Yes
+        )
+
+)
+
+[19-May-2025 07:52:48 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"14"},{"question":"Do you agree with the salary package","answer":"Yes"}]
+[19-May-2025 07:52:48 Europe/Berlin] PDOException: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`testingsystem`.`applications`, CONSTRAINT `applications_ibfk_1` FOREIGN KEY (`job_id`) REFERENCES `jobs` (`job_id`) ON DELETE SET NULL) in C:\xampp\htdocs\recruitment\admin\save_application.php on line 165
+[19-May-2025 07:53:19 Europe/Berlin] POST data: Array
+(
+    [job_id] => 58
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 14
+    [salaryPackage] => Yes
+    [reference] => FZ-AE-32
+    [job_title] => Business Analyst
+    [screening_questions] => []
+)
+
+[19-May-2025 07:53:19 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (2).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php5B6D.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[19-May-2025 07:53:19 Europe/Berlin] Answers array: Array
+(
+    [0] => Array
+        (
+            [question] => What is your current notice period
+            [answer] => 14
+        )
+
+    [1] => Array
+        (
+            [question] => Do you agree with the salary package
+            [answer] => Yes
+        )
+
+)
+
+[19-May-2025 07:53:19 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"14"},{"question":"Do you agree with the salary package","answer":"Yes"}]
+[19-May-2025 07:53:19 Europe/Berlin] PDOException: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`testingsystem`.`applications`, CONSTRAINT `applications_ibfk_1` FOREIGN KEY (`job_id`) REFERENCES `jobs` (`job_id`) ON DELETE SET NULL) in C:\xampp\htdocs\recruitment\admin\save_application.php on line 165
+[19-May-2025 07:54:05 Europe/Berlin] POST data: Array
+(
+    [job_id] => 59
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 14
+    [salaryPackage] => Yes
+    [reference] => wwq
+    [job_title] => Business Analyst
+    [screening_questions] => []
+)
+
+[19-May-2025 07:54:05 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 6826ecaa314b3_682473a6869ce_Tibco Solutions (3).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpD49.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[19-May-2025 07:54:05 Europe/Berlin] Answers array: Array
+(
+    [0] => Array
+        (
+            [question] => What is your current notice period
+            [answer] => 14
+        )
+
+    [1] => Array
+        (
+            [question] => Do you agree with the salary package
+            [answer] => Yes
+        )
+
+)
+
+[19-May-2025 07:54:05 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"14"},{"question":"Do you agree with the salary package","answer":"Yes"}]
+[19-May-2025 07:54:24 Europe/Berlin] POST data: Array
+(
+    [job_id] => 59
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 14
+    [salaryPackage] => No
+    [reference] => wwq
+    [job_title] => Business Analyst
+    [screening_questions] => []
+)
+
+[19-May-2025 07:54:24 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (2).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php5734.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[19-May-2025 07:54:24 Europe/Berlin] Duplicate application: Email muhammadarbazkhan2@gmail.com for job_id 59
+[19-May-2025 07:54:24 Europe/Berlin] Exception: You have already applied for this job in C:\xampp\htdocs\recruitment\admin\save_application.php on line 88
+[19-May-2025 08:18:47 Europe/Berlin] POST data: Array
+(
+    [job_id] => 60
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 14
+    [salaryPackage] => Yes
+    [reference] => FZ-AE-32
+    [job_title] => Business Analyst
+    [screening_questions] => [{"question":"Have you worked with","answer":["Java"]},{"question":"What is your experience","answer":"No"}]
+)
+
+[19-May-2025 08:18:47 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (2).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpAD1A.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[19-May-2025 08:18:47 Europe/Berlin] Answers array: Array
+(
+    [0] => Array
+        (
+            [question] => What is your current notice period
+            [answer] => 14
+        )
+
+    [1] => Array
+        (
+            [question] => Do you agree with the salary package
+            [answer] => Yes
+        )
+
+    [2] => Array
+        (
+            [question] => Have you worked with
+            [answer] => Java
+        )
+
+    [3] => Array
+        (
+            [question] => What is your experience
+            [answer] => No
+        )
+
+)
+
+[19-May-2025 08:18:47 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"14"},{"question":"Do you agree with the salary package","answer":"Yes"},{"question":"Have you worked with","answer":"Java"},{"question":"What is your experience","answer":"No"}]
+[19-May-2025 09:41:34 Europe/Berlin] POST: Array
+(
+    [job_id] => 60
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 14
+    [salaryPackage] => Yes
+    [reference] => FZ-AE-32
+    [job_title] => Business Analyst
+    [screening_questions] => [{"question":"Have you worked with","answer":["Java"]},{"question":"What is your experience","answer":"Yes"}]
+)
+
+[19-May-2025 09:41:34 Europe/Berlin] FILES: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (2).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php7736.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[19-May-2025 09:41:34 Europe/Berlin] POST: Array
+(
+    [job_id] => 60
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 14
+    [salaryPackage] => Yes
+    [reference] => FZ-AE-32
+    [job_title] => Business Analyst
+    [screening_questions] => [{"question":"Have you worked with","answer":["Java"]},{"question":"What is your experience","answer":"Yes"}]
+)
+
+[19-May-2025 09:41:34 Europe/Berlin] FILES: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (2).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php7735.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[19-May-2025 09:41:34 Europe/Berlin] Exception: You have already applied for this job
+[19-May-2025 09:41:34 Europe/Berlin] Exception: You have already applied for this job
+[19-May-2025 09:44:07 Europe/Berlin] POST: Array
+(
+    [job_id] => 60
+    [fullName] => arbaz khan
+    [email] => arbaz.khan@cinergiedigital.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 14
+    [salaryPackage] => Yes
+    [reference] => FZ-AE-32
+    [job_title] => Business Analyst
+    [screening_questions] => [{"question":"Have you worked with","answer":["Java"]},{"question":"What is your experience","answer":"Yes"}]
+)
+
+[19-May-2025 09:44:07 Europe/Berlin] FILES: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (2).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpCCFE.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[19-May-2025 09:44:07 Europe/Berlin] PHP Warning:  require(PHPMailer/src/PHPMailer.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\recruitment\admin\save_application.php on line 109
+[19-May-2025 09:44:07 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'PHPMailer/src/PHPMailer.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\recruitment\admin\save_application.php:109
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\recruitment\admin\save_application.php on line 109
+[19-May-2025 09:48:40 Europe/Berlin] POST data: Array
+(
+    [job_id] => 61
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 39
+    [salaryPackage] => Yes
+    [reference] => FZ-AE-32
+    [job_title] => Business Analyst
+    [screening_questions] => [{"question":"Have you worked with","answer":["Java"]},{"question":"What is your experience","answer":"Yes"}]
+)
+
+[19-May-2025 09:48:40 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (1).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpF42F.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[19-May-2025 09:48:40 Europe/Berlin] Answers array: Array
+(
+    [0] => Array
+        (
+            [question] => What is your current notice period
+            [answer] => 39
+        )
+
+    [1] => Array
+        (
+            [question] => Do you agree with the salary package
+            [answer] => Yes
+        )
+
+    [2] => Array
+        (
+            [question] => Have you worked with
+            [answer] => Java
+        )
+
+    [3] => Array
+        (
+            [question] => What is your experience
+            [answer] => Yes
+        )
+
+)
+
+[19-May-2025 09:48:40 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"39"},{"question":"Do you agree with the salary package","answer":"Yes"},{"question":"Have you worked with","answer":"Java"},{"question":"What is your experience","answer":"Yes"}]
+[19-May-2025 13:04:34 Europe/Berlin] PHP Warning:  require(vendor/autoload.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\recruitment\admin\save_application.php on line 26
+[19-May-2025 13:04:34 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\recruitment\admin\save_application.php:26
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\recruitment\admin\save_application.php on line 26
+[19-May-2025 13:04:49 Europe/Berlin] PHP Warning:  require(vendor/autoload.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\recruitment\admin\save_application.php on line 26
+[19-May-2025 13:04:49 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\recruitment\admin\save_application.php:26
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\recruitment\admin\save_application.php on line 26
+[19-May-2025 13:07:32 Europe/Berlin] Raw input: 
+[19-May-2025 13:07:32 Europe/Berlin] POST data: Array
+(
+    [job_id] => 62
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 39
+    [salaryPackage] => Yes
+    [reference] => FZ-AE-32
+    [job_title] => Business Analyst
+    [screening_questions] => []
+)
+
+[19-May-2025 13:07:32 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php64D.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[19-May-2025 13:07:32 Europe/Berlin] Attempting to move CV to: Uploads/682b10f487d33_682473a6869ce_Tibco Solutions.pdf
+[19-May-2025 13:07:32 Europe/Berlin] Answers array: Array
+(
+    [0] => Array
+        (
+            [question] => What is your current notice period
+            [answer] => 39
+        )
+
+    [1] => Array
+        (
+            [question] => Do you agree with the salary package
+            [answer] => Yes
+        )
+
+)
+
+[19-May-2025 13:07:32 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"39"},{"question":"Do you agree with the salary package","answer":"Yes"}]
+[19-May-2025 13:07:40 Europe/Berlin] Email sending failed to muhammadarbazkhan2@gmail.com: SMTP Error: Could not authenticate.
+[19-May-2025 13:08:55 Europe/Berlin] Raw input: 
+[19-May-2025 13:08:55 Europe/Berlin] POST data: Array
+(
+    [job_id] => 62
+    [fullName] => arbaz khan
+    [email] => arbaz.khan@cinergiedigital.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 39
+    [salaryPackage] => Yes
+    [reference] => FZ-AE-32
+    [job_title] => Business Analyst
+    [screening_questions] => []
+)
+
+[19-May-2025 13:08:55 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php4A09.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[19-May-2025 13:08:55 Europe/Berlin] Attempting to move CV to: Uploads/682b114732ae4_682473a6869ce_Tibco Solutions.pdf
+[19-May-2025 13:08:55 Europe/Berlin] Answers array: Array
+(
+    [0] => Array
+        (
+            [question] => What is your current notice period
+            [answer] => 39
+        )
+
+    [1] => Array
+        (
+            [question] => Do you agree with the salary package
+            [answer] => Yes
+        )
+
+)
+
+[19-May-2025 13:08:55 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"39"},{"question":"Do you agree with the salary package","answer":"Yes"}]
+[19-May-2025 13:08:56 Europe/Berlin] Raw input: 
+[19-May-2025 13:08:56 Europe/Berlin] POST data: Array
+(
+    [job_id] => 62
+    [fullName] => arbaz khan
+    [email] => arbaz.khan@cinergiedigital.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 39
+    [salaryPackage] => Yes
+    [reference] => FZ-AE-32
+    [job_title] => Business Analyst
+    [screening_questions] => []
+)
+
+[19-May-2025 13:08:56 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php4E31.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[19-May-2025 13:08:56 Europe/Berlin] Duplicate application: Email arbaz.khan@cinergiedigital.com for job_id 62
+[19-May-2025 13:08:56 Europe/Berlin] Exception: You have already applied for this job in C:\xampp\htdocs\recruitment\admin\save_application.php on line 97
+[19-May-2025 13:09:03 Europe/Berlin] Email sending failed to arbaz.khan@cinergiedigital.com: SMTP Error: Could not authenticate.
+[19-May-2025 13:10:22 Europe/Berlin] Raw input: 
+[19-May-2025 13:10:22 Europe/Berlin] POST data: Array
+(
+    [job_id] => 62
+    [fullName] => arbaz khan
+    [email] => arbaz.khan@cinergiedigital.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 39
+    [salaryPackage] => Yes
+    [reference] => FZ-AE-32
+    [job_title] => Business Analyst
+    [screening_questions] => []
+)
+
+[19-May-2025 13:10:22 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (2).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php9E12.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[19-May-2025 13:10:22 Europe/Berlin] Attempting to move CV to: Uploads/682b119e38ce5_682473a6869ce_Tibco Solutions (2).pdf
+[19-May-2025 13:10:22 Europe/Berlin] Answers array: Array
+(
+    [0] => Array
+        (
+            [question] => What is your current notice period
+            [answer] => 39
+        )
+
+    [1] => Array
+        (
+            [question] => Do you agree with the salary package
+            [answer] => Yes
+        )
+
+)
+
+[19-May-2025 13:10:22 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"39"},{"question":"Do you agree with the salary package","answer":"Yes"}]
+[19-May-2025 13:10:23 Europe/Berlin] Raw input: 
+[19-May-2025 13:10:23 Europe/Berlin] POST data: Array
+(
+    [job_id] => 62
+    [fullName] => arbaz khan
+    [email] => arbaz.khan@cinergiedigital.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 39
+    [salaryPackage] => Yes
+    [reference] => FZ-AE-32
+    [job_title] => Business Analyst
+    [screening_questions] => []
+)
+
+[19-May-2025 13:10:23 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (2).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpA372.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[19-May-2025 13:10:23 Europe/Berlin] Duplicate application: Email arbaz.khan@cinergiedigital.com for job_id 62
+[19-May-2025 13:10:23 Europe/Berlin] Exception: You have already applied for this job in C:\xampp\htdocs\recruitment\admin\save_application.php on line 97
+[19-May-2025 13:10:29 Europe/Berlin] Email sending failed to arbaz.khan@cinergiedigital.com: SMTP Error: Could not authenticate.
+[19-May-2025 13:13:43 Europe/Berlin] Raw input: 
+[19-May-2025 13:13:43 Europe/Berlin] POST data: Array
+(
+    [job_id] => 62
+    [fullName] => arbaz khan
+    [email] => arbaz.khan@cinergiedigital.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 14
+    [salaryPackage] => Yes
+    [reference] => FZ-AE-32
+    [job_title] => Business Analyst
+    [screening_questions] => []
+)
+
+[19-May-2025 13:13:43 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (2).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpB017.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[19-May-2025 13:13:43 Europe/Berlin] Attempting to move CV to: Uploads/682b12678add7_682473a6869ce_Tibco Solutions (2).pdf
+[19-May-2025 13:13:43 Europe/Berlin] Answers array: Array
+(
+    [0] => Array
+        (
+            [question] => What is your current notice period
+            [answer] => 14
+        )
+
+    [1] => Array
+        (
+            [question] => Do you agree with the salary package
+            [answer] => Yes
+        )
+
+)
+
+[19-May-2025 13:13:43 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"14"},{"question":"Do you agree with the salary package","answer":"Yes"}]
+[19-May-2025 13:13:51 Europe/Berlin] Email sending failed to arbaz.khan@cinergiedigital.com: SMTP Error: Could not authenticate.
+[19-May-2025 13:18:59 Europe/Berlin] POST data: Array
+(
+    [job_id] => 62
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 14
+    [salaryPackage] => Yes
+    [reference] => FZ-AE-32
+    [job_title] => Business Analyst
+    [screening_questions] => []
+)
+
+[19-May-2025 13:18:59 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (3).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php8337.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[19-May-2025 13:18:59 Europe/Berlin] Answers array: Array
+(
+    [0] => Array
+        (
+            [question] => What is your current notice period
+            [answer] => 14
+        )
+
+    [1] => Array
+        (
+            [question] => Do you agree with the salary package
+            [answer] => Yes
+        )
+
+)
+
+[19-May-2025 13:18:59 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"14"},{"question":"Do you agree with the salary package","answer":"Yes"}]
+[19-May-2025 18:59:39 Europe/Berlin] POST data: Array
+(
+    [job_id] => 62
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 39
+    [salaryPackage] => Yes
+    [reference] => FZ-AE-32
+    [job_title] => Business Analyst
+    [screening_questions] => []
+)
+
+[19-May-2025 18:59:39 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (2).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php662E.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[19-May-2025 18:59:39 Europe/Berlin] Answers array: Array
+(
+    [0] => Array
+        (
+            [question] => What is your current notice period
+            [answer] => 39
+        )
+
+    [1] => Array
+        (
+            [question] => Do you agree with the salary package
+            [answer] => Yes
+        )
+
+)
+
+[19-May-2025 18:59:39 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"39"},{"question":"Do you agree with the salary package","answer":"Yes"}]
+[20-May-2025 09:09:33 Europe/Berlin] POST data: Array
+(
+    [job_id] => 63
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 39
+    [salaryPackage] => Yes
+    [reference] => FZ-AE-32
+    [job_title] => Business Analyst
+    [screening_questions] => [{"question":"do u know abt apace","answer":"Yes"},{"question":"Have you worked with","answer":["react"]}]
+)
+
+[20-May-2025 09:09:33 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (1).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php8345.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[20-May-2025 09:09:33 Europe/Berlin] Answers array: Array
+(
+    [0] => Array
+        (
+            [question] => What is your current notice period
+            [answer] => 39
+        )
+
+    [1] => Array
+        (
+            [question] => Do you agree with the salary package
+            [answer] => Yes
+        )
+
+    [2] => Array
+        (
+            [question] => do u know abt apace
+            [answer] => Yes
+        )
+
+    [3] => Array
+        (
+            [question] => Have you worked with
+            [answer] => react
+        )
+
+)
+
+[20-May-2025 09:09:33 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"39"},{"question":"Do you agree with the salary package","answer":"Yes"},{"question":"do u know abt apace","answer":"Yes"},{"question":"Have you worked with","answer":"react"}]
+[21-May-2025 05:55:56 Europe/Berlin] POST data: Array
+(
+    [job_id] => 66
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 39
+    [salaryPackage] => Yes
+    [reference] => 2
+    [job_title] => Senior Data Engineer
+    [screening_questions] => []
+)
+
+[21-May-2025 05:55:56 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (3).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php9AF6.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[21-May-2025 05:55:56 Europe/Berlin] Answers array: Array
+(
+    [0] => Array
+        (
+            [question] => What is your current notice period
+            [answer] => 39
+        )
+
+    [1] => Array
+        (
+            [question] => Do you agree with the salary package
+            [answer] => Yes
+        )
+
+)
+
+[21-May-2025 05:55:56 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"39"},{"question":"Do you agree with the salary package","answer":"Yes"}]
+[21-May-2025 05:56:27 Europe/Berlin] POST data: Array
+(
+    [job_id] => 65
+    [fullName] => luqman
+    [email] => arbaz.khan@cinergiedigital.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 14
+    [salaryPackage] => Yes
+    [reference] => FZ-AE-32
+    [job_title] => Business Analyst
+    [screening_questions] => []
+)
+
+[21-May-2025 05:56:27 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (1).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php1383.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[21-May-2025 05:56:27 Europe/Berlin] Answers array: Array
+(
+    [0] => Array
+        (
+            [question] => What is your current notice period
+            [answer] => 14
+        )
+
+    [1] => Array
+        (
+            [question] => Do you agree with the salary package
+            [answer] => Yes
+        )
+
+)
+
+[21-May-2025 05:56:27 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"14"},{"question":"Do you agree with the salary package","answer":"Yes"}]
+[21-May-2025 05:58:34 Europe/Berlin] POST data: Array
+(
+    [job_id] => 65
+    [fullName] => umer
+    [email] => umer@cinergiedigital.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 14
+    [salaryPackage] => Yes
+    [reference] => FZ-AE-32
+    [job_title] => Business Analyst
+    [screening_questions] => []
+)
+
+[21-May-2025 05:58:34 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (1).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php3CA.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[21-May-2025 05:58:34 Europe/Berlin] Answers array: Array
+(
+    [0] => Array
+        (
+            [question] => What is your current notice period
+            [answer] => 14
+        )
+
+    [1] => Array
+        (
+            [question] => Do you agree with the salary package
+            [answer] => Yes
+        )
+
+)
+
+[21-May-2025 05:58:34 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"14"},{"question":"Do you agree with the salary package","answer":"Yes"}]
+[21-May-2025 06:07:53 Europe/Berlin] POST data: Array
+(
+    [job_id] => 65
+    [fullName] => amad
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 39
+    [salaryPackage] => Yes
+    [reference] => FZ-AE-32
+    [job_title] => Business Analyst
+    [screening_questions] => []
+)
+
+[21-May-2025 06:07:53 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (1).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php8BE0.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[21-May-2025 06:07:53 Europe/Berlin] Answers array: Array
+(
+    [0] => Array
+        (
+            [question] => What is your current notice period
+            [answer] => 39
+        )
+
+    [1] => Array
+        (
+            [question] => Do you agree with the salary package
+            [answer] => Yes
+        )
+
+)
+
+[21-May-2025 06:07:53 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"39"},{"question":"Do you agree with the salary package","answer":"Yes"}]
+[21-May-2025 06:09:26 Europe/Berlin] POST data: Array
+(
+    [job_id] => 68
+    [fullName] => fyaz
+    [email] => john@example.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 14
+    [salaryPackage] => Yes
+    [reference] => dd
+    [job_title] => net dev
+    [screening_questions] => []
+)
+
+[21-May-2025 06:09:26 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpF574.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[21-May-2025 06:09:26 Europe/Berlin] Answers array: Array
+(
+    [0] => Array
+        (
+            [question] => What is your current notice period
+            [answer] => 14
+        )
+
+    [1] => Array
+        (
+            [question] => Do you agree with the salary package
+            [answer] => Yes
+        )
+
+)
+
+[21-May-2025 06:09:26 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"14"},{"question":"Do you agree with the salary package","answer":"Yes"}]
+[21-May-2025 06:49:25 Europe/Berlin] POST data: Array
+(
+    [job_id] => 67
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 39
+    [salaryPackage] => No
+    [reference] => dd
+    [job_title] => net dev
+    [screening_questions] => []
+)
+
+[21-May-2025 06:49:25 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php91F4.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[21-May-2025 06:49:25 Europe/Berlin] Answers array: Array
+(
+    [0] => Array
+        (
+            [question] => What is your current notice period
+            [answer] => 39
+        )
+
+    [1] => Array
+        (
+            [question] => Do you agree with the salary package
+            [answer] => No
+        )
+
+)
+
+[21-May-2025 06:49:25 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"39"},{"question":"Do you agree with the salary package","answer":"No"}]
+[21-May-2025 06:49:51 Europe/Berlin] POST data: Array
+(
+    [job_id] => 67
+    [fullName] => luqman
+    [email] => arbaz.khan@cinergiedigital.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 14
+    [salaryPackage] => Yes
+    [reference] => dd
+    [job_title] => net dev
+    [screening_questions] => []
+)
+
+[21-May-2025 06:49:51 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (1).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpF8BE.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[21-May-2025 06:49:51 Europe/Berlin] Answers array: Array
+(
+    [0] => Array
+        (
+            [question] => What is your current notice period
+            [answer] => 14
+        )
+
+    [1] => Array
+        (
+            [question] => Do you agree with the salary package
+            [answer] => Yes
+        )
+
+)
+
+[21-May-2025 06:49:51 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"14"},{"question":"Do you agree with the salary package","answer":"Yes"}]
+[21-May-2025 06:54:28 Europe/Berlin] POST data: Array
+(
+    [job_id] => 69
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 39
+    [salaryPackage] => Yes
+    [reference] => uui
+    [job_title] => net dev
+    [screening_questions] => [{"question":"do y work wit","answer":"Yes"},{"question":"Have you worked with","answer":["MySQL"]}]
+)
+
+[21-May-2025 06:54:28 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php3305.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[21-May-2025 06:54:28 Europe/Berlin] Answers array: Array
+(
+    [0] => Array
+        (
+            [question] => What is your current notice period
+            [answer] => 39
+        )
+
+    [1] => Array
+        (
+            [question] => Do you agree with the salary package
+            [answer] => Yes
+        )
+
+    [2] => Array
+        (
+            [question] => do y work wit
+            [answer] => Yes
+        )
+
+    [3] => Array
+        (
+            [question] => Have you worked with
+            [answer] => MySQL
+        )
+
+)
+
+[21-May-2025 06:54:28 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"39"},{"question":"Do you agree with the salary package","answer":"Yes"},{"question":"do y work wit","answer":"Yes"},{"question":"Have you worked with","answer":"MySQL"}]
+[21-May-2025 06:56:30 Europe/Berlin] POST data: Array
+(
+    [job_id] => 69
+    [fullName] => luqman
+    [email] => arbaz.khan@cinergiedigital.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 39
+    [salaryPackage] => No
+    [reference] => uui
+    [job_title] => net dev
+    [screening_questions] => [{"question":"do y work wit","answer":"Yes"},{"question":"Have you worked with","answer":["Java"]}]
+)
+
+[21-May-2025 06:56:30 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpE6D.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[21-May-2025 06:56:30 Europe/Berlin] Answers array: Array
+(
+    [0] => Array
+        (
+            [question] => What is your current notice period
+            [answer] => 39
+        )
+
+    [1] => Array
+        (
+            [question] => Do you agree with the salary package
+            [answer] => No
+        )
+
+    [2] => Array
+        (
+            [question] => do y work wit
+            [answer] => Yes
+        )
+
+    [3] => Array
+        (
+            [question] => Have you worked with
+            [answer] => Java
+        )
+
+)
+
+[21-May-2025 06:56:30 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"39"},{"question":"Do you agree with the salary package","answer":"No"},{"question":"do y work wit","answer":"Yes"},{"question":"Have you worked with","answer":"Java"}]
+[21-May-2025 06:57:19 Europe/Berlin] POST data: Array
+(
+    [job_id] => 69
+    [fullName] => umer
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 12
+    [salaryPackage] => Yes
+    [reference] => uui
+    [job_title] => net dev
+    [screening_questions] => [{"question":"do y work wit","answer":"Yes"},{"question":"Have you worked with","answer":["Java"]}]
+)
+
+[21-May-2025 06:57:19 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpCE05.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[21-May-2025 06:57:19 Europe/Berlin] Duplicate application: Email muhammadarbazkhan2@gmail.com for job_id 69
+[21-May-2025 06:57:19 Europe/Berlin] Exception: You have already applied for this job in C:\xampp\htdocs\recruitment\admin\save_application.php on line 88
+[21-May-2025 06:57:28 Europe/Berlin] POST data: Array
+(
+    [job_id] => 69
+    [fullName] => umer
+    [email] => admin@example.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 12
+    [salaryPackage] => Yes
+    [reference] => uui
+    [job_title] => net dev
+    [screening_questions] => [{"question":"do y work wit","answer":"Yes"},{"question":"Have you worked with","answer":["Java"]}]
+)
+
+[21-May-2025 06:57:28 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpF063.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[21-May-2025 06:57:28 Europe/Berlin] Answers array: Array
+(
+    [0] => Array
+        (
+            [question] => What is your current notice period
+            [answer] => 12
+        )
+
+    [1] => Array
+        (
+            [question] => Do you agree with the salary package
+            [answer] => Yes
+        )
+
+    [2] => Array
+        (
+            [question] => do y work wit
+            [answer] => Yes
+        )
+
+    [3] => Array
+        (
+            [question] => Have you worked with
+            [answer] => Java
+        )
+
+)
+
+[21-May-2025 06:57:28 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"12"},{"question":"Do you agree with the salary package","answer":"Yes"},{"question":"do y work wit","answer":"Yes"},{"question":"Have you worked with","answer":"Java"}]
+[21-May-2025 06:59:08 Europe/Berlin] POST data: Array
+(
+    [job_id] => 69
+    [fullName] => amad
+    [email] => umer@cinergiedigital.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 14
+    [salaryPackage] => Yes
+    [reference] => uui
+    [job_title] => net dev
+    [screening_questions] => [{"question":"do y work wit","answer":"Yes"},{"question":"Have you worked with","answer":["Java","MySQL"]}]
+)
+
+[21-May-2025 06:59:08 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682473a6869ce_Tibco Solutions (1).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php77A0.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[21-May-2025 06:59:08 Europe/Berlin] Answers array: Array
+(
+    [0] => Array
+        (
+            [question] => What is your current notice period
+            [answer] => 14
+        )
+
+    [1] => Array
+        (
+            [question] => Do you agree with the salary package
+            [answer] => Yes
+        )
+
+    [2] => Array
+        (
+            [question] => do y work wit
+            [answer] => Yes
+        )
+
+    [3] => Array
+        (
+            [question] => Have you worked with
+            [answer] => Java, MySQL
+        )
+
+)
+
+[21-May-2025 06:59:08 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"14"},{"question":"Do you agree with the salary package","answer":"Yes"},{"question":"do y work wit","answer":"Yes"},{"question":"Have you worked with","answer":"Java, MySQL"}]
+[21-May-2025 07:41:15 Europe/Berlin] POST data: Array
+(
+    [job_id] => 70
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 39
+    [salaryPackage] => Yes
+    [reference] => s
+    [job_title] => Business Analyst
+    [screening_questions] => [{"question":"How would you rate yourself?","answer":"8"}]
+)
+
+[21-May-2025 07:41:15 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682d5d9c79a53_682473a6869ce_Tibco Solutions (1).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php591.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[21-May-2025 07:41:15 Europe/Berlin] Answers array: Array
+(
+    [0] => Array
+        (
+            [question] => What is your current notice period
+            [answer] => 39
+        )
+
+    [1] => Array
+        (
+            [question] => Do you agree with the salary package
+            [answer] => Yes
+        )
+
+    [2] => Array
+        (
+            [question] => How would you rate yourself?
+            [answer] => 8
+        )
+
+)
+
+[21-May-2025 07:41:15 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"39"},{"question":"Do you agree with the salary package","answer":"Yes"},{"question":"How would you rate yourself?","answer":"8"}]
+[21-May-2025 08:12:30 Europe/Berlin] POST data: Array
+(
+    [job_id] => 70
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 39
+    [salaryPackage] => Yes
+    [reference] => s
+    [job_title] => Business Analyst
+    [screening_questions] => [{"question":"How would you rate yourself?","answer":"9"}]
+)
+
+[21-May-2025 08:12:30 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682d5d9c79a53_682473a6869ce_Tibco Solutions (1).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpA302.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[21-May-2025 08:12:30 Europe/Berlin] Answers array: Array
+(
+    [0] => Array
+        (
+            [question] => What is your current notice period
+            [answer] => 39
+        )
+
+    [1] => Array
+        (
+            [question] => Do you agree with the salary package
+            [answer] => Yes
+        )
+
+    [2] => Array
+        (
+            [question] => How would you rate yourself?
+            [answer] => 9
+        )
+
+)
+
+[21-May-2025 08:12:30 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"39"},{"question":"Do you agree with the salary package","answer":"Yes"},{"question":"How would you rate yourself?","answer":"9"}]
+[21-May-2025 08:13:02 Europe/Berlin] POST data: Array
+(
+    [job_id] => 70
+    [fullName] => luqman
+    [email] => arbaz.khan@cinergiedigital.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 39
+    [salaryPackage] => Yes
+    [reference] => s
+    [job_title] => Business Analyst
+    [screening_questions] => [{"question":"How would you rate yourself?","answer":"9"}]
+)
+
+[21-May-2025 08:13:02 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682d5d9c79a53_682473a6869ce_Tibco Solutions (1).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\php2042.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[21-May-2025 08:13:02 Europe/Berlin] Answers array: Array
+(
+    [0] => Array
+        (
+            [question] => What is your current notice period
+            [answer] => 39
+        )
+
+    [1] => Array
+        (
+            [question] => Do you agree with the salary package
+            [answer] => Yes
+        )
+
+    [2] => Array
+        (
+            [question] => How would you rate yourself?
+            [answer] => 9
+        )
+
+)
+
+[21-May-2025 08:13:02 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"39"},{"question":"Do you agree with the salary package","answer":"Yes"},{"question":"How would you rate yourself?","answer":"9"}]
+[21-May-2025 09:02:59 Europe/Berlin] POST data: Array
+(
+    [job_id] => 70
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 39
+    [salaryPackage] => Yes
+    [reference] => s
+    [job_title] => Business Analyst
+    [screening_questions] => [{"question":"How would you rate yourself?","answer":"4"}]
+)
+
+[21-May-2025 09:02:59 Europe/Berlin] FILES data: Array
+(
+    [cv] => Array
+        (
+            [name] => 682d5d9c79a53_682473a6869ce_Tibco Solutions (1).pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpDA9F.tmp
+            [error] => 0
+            [size] => 29423
+        )
+
+)
+
+[21-May-2025 09:02:59 Europe/Berlin] Answers array: Array
+(
+    [0] => Array
+        (
+            [question] => What is your current notice period
+            [answer] => 39
+        )
+
+    [1] => Array
+        (
+            [question] => Do you agree with the salary package
+            [answer] => Yes
+        )
+
+    [2] => Array
+        (
+            [question] => How would you rate yourself?
+            [answer] => 4
+        )
+
+)
+
+[21-May-2025 09:02:59 Europe/Berlin] Answers JSON: [{"question":"What is your current notice period","answer":"39"},{"question":"Do you agree with the salary package","answer":"Yes"},{"question":"How would you rate yourself?","answer":"4"}]

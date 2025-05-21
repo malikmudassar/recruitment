@@ -1,10 +1,16 @@
+/* Import Roboto font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 /* General Styles */
-body {
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f1eded; /* LinkedIn's light gray background */
+    color: #333333; /* Dark gray for text */
+    display: flex;
+    flex-direction: column;
 }
 
 /* Login Page */
@@ -12,15 +18,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #2c3e50;
+    min-height: 100vh;
+    background-color: #F6F6F6; /* Light gray */
 }
 
 .login-box {
-    background-color: #fff;
+    background-color: #FFFFFF; /* White card */
     padding: 2rem;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Subtle shadow */
     width: 100%;
     max-width: 400px;
     text-align: center;
@@ -33,48 +39,60 @@ body {
 
 .login-logo h1 {
     font-size: 1.5rem;
-    color: #2c3e50;
+    color: #0A66C2; /* LinkedIn Blue */
     margin-bottom: 1.5rem;
+    font-weight: 500;
 }
 
-.login-form input select {
+.login-form input,
+.login-form select {
     width: 100%;
     padding: 0.75rem;
     margin-bottom: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    border: 1px solid #8696A7; /* Neutral gray */
+    border-radius: 6px;
     font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.login-form input:focus,
+.login-form select:focus {
+    outline: none;
+    border-color: #0A66C2;
+    box-shadow: 0 0 0 3px rgba(10, 102, 194, 0.2);
 }
 
 .login-form button {
     width: 100%;
     padding: 0.75rem;
-    background-color: #3498db;
-    color: #fff;
+    background-color: #0A66C2; /* LinkedIn Blue */
+    color: #FFFFFF;
     border: none;
-    border-radius: 4px;
+    border-radius: 6px;
     font-size: 1rem;
+    font-weight: 500;
     cursor: pointer;
+    transition: background-color 0.2s;
 }
 
 .login-form button:hover {
-    background-color: #2980b9;
+    background-color: #004182; /* Darker blue */
+}
+
+.login-form button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(10, 102, 194, 0.2);
 }
 
 .error-message {
-    color: #e74c3c;
+    color: #D32F2F; /* LinkedIn Red */
+    background-color: #FEE2E2; /* Light red background */
+    padding: 0.5rem;
+    border-radius: 4px;
     margin-bottom: 1rem;
+    font-size: 0.875rem;
 }
 
-/* Admin Header */
-.admin-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #2c3e50;
-    padding: 1rem 2rem;
-    color: #fff;
-}
 
 .admin-header .logo img {
     height: 40px;
@@ -87,51 +105,31 @@ body {
 
 .admin-name {
     margin-right: 1rem;
-    font-weight: bold;
+    font-weight: 500;
+    color: #FFFFFF; /* White for teal background */
 }
 
 .logout-button {
-    color: #fff;
+    color: #FFFFFF;
     text-decoration: none;
-    background-color: #e74c3c;
+    background-color: #D32F2F; /* LinkedIn Red */
     padding: 0.5rem 1rem;
-    border-radius: 4px;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: background-color 0.2s;
 }
 
 .logout-button:hover {
-    background-color: #c0392b;
+    background-color: #B71C1C; /* Darker red */
 }
 
-/* Side Navigation */
-.sidenav {
-    width: 250px;
-    background-color: #34495e;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding-top: 60px; /* Adjust based on header height */
+.logout-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(211, 47, 47, 0.2);
 }
 
-.sidenav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
 
-.sidenav ul li {
-    padding: 0.5rem 1rem;
-}
-
-.sidenav ul li a {
-    color: #fff;
-    text-decoration: none;
-    display: block;
-}
-
-.sidenav ul li a:hover {
-    color: #3498db;
-}
 
 /* Sub-Menu Styles */
 .submenu .submenu-items {
@@ -150,55 +148,41 @@ body {
 .submenu-toggle {
     cursor: pointer;
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .submenu-toggle::after {
     content: "▼";
     font-size: 0.8rem;
-    position: absolute;
-    right: 0;
+    margin-left: auto;
     transition: transform 0.3s;
+    color: #FFFFFF; /* White arrow for contrast */
 }
 
 .submenu.active .submenu-toggle::after {
     transform: rotate(180deg);
 }
+
 /* Main Content */
 .main-content {
-    margin-left: 250px; /* Same as sidenav width */
+    margin-left: 250px;
     padding: 2rem;
+    background-color: #f9f2f2; /* Light gray */
+    min-height: calc(100vh - 60px);
+    flex: 1;
 }
 
 /* Admin Footer */
-.admin-footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #2c3e50;
-    color: #fff;
-    margin-left: 250px; /* Same as sidenav width */
-}
-
-/* General Styles */
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-}
-
-/* Main Content */
-.main-content {
-    flex: 1;
-    padding: 2rem;
-}
-
-/* Footer */
+.admin-footer,
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: #2c3e50;
-    color: #fff;
+    background-color: #FFFFFF; /* White */
+    color: #333333;
+    border-top: 1px solid #E0E0E0; /* Light gray border */
+    margin-left: 250px;
+    font-size: 0.875rem;
 }
 
 /* Table Styles */
@@ -206,41 +190,29 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 1rem;
+    background-color: #FFFFFF; /* White */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); /* Subtle shadow */
 }
 
-table th, table td {
+table th,
+table td {
     padding: 0.75rem;
-    border: 1px solid #ddd;
+    border-bottom: 1px solid #E0E0E0; /* Light gray */
     text-align: left;
 }
 
 table th {
-    background-color: #3498db;
-    color: #fff;
+    background-color: #0A66C2; /* LinkedIn Blue */
+    color: #FFFFFF;
+    font-weight: 500;
 }
 
-/* Buttons */
-.add-button {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background-color: #2ecc71;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 4px;
-    margin-bottom: 1rem;
+table tr:hover {
+    background-color: #F9FAFB; /* Light hover */
 }
 
-.add-button:hover {
-    background-color: #27ae60;
-}
-
-.edit-button {
-    color: #3498db;
-    text-decoration: none;
-}
-
-.delete-button {
-    color: #e74c3c;
-    text-decoration: none;
-    margin-left: 0.5rem;
-}
+table td a {
+    color: #0A66C2; /* LinkedIn Blue */}
+    
