@@ -1,400 +1,401 @@
 <?php
 session_start();
-
-// Redirect to login if not logged in
 if (!isset($_SESSION['admin_id'])) {
     header('Location: login.php');
     exit();
 }
+include '../db.php';
+$admin_name = htmlspecialchars($_SESSION['admin_name'], ENT_QUOTES, 'UTF-8');
 
-include '../db.php'; // Include database connection
-
-$admin_name = $_SESSION['admin_name'];
-
-// Fetch counts from the database
+// Basic counts
 $candidates_count = $conn->query("SELECT COUNT(*) FROM applications")->fetchColumn();
-$categories_count = $conn->query("SELECT COUNT(*) FROM jobs")->fetchColumn();
-$tests_count = $conn->query("SELECT COUNT(*) FROM Tests")->fetchColumn();
-$passed_candidates_count = $conn->query("SELECT COUNT(DISTINCT candidate_id) FROM TestResults WHERE score >= 70")->fetchColumn(); // Assuming 70% is the passing score
-?>
+$jobs_count = $conn->query("SELECT COUNT(*) FROM jobs")->fetchColumn();
 
+// Check columns in tables
+$applications_columns = $conn->query("SHOW COLUMNS FROM applications")->fetchAll(PDO::FETCH_COLUMN);
+$jobs_columns = $conn->query("SHOW COLUMNS FROM jobs")->fetchAll(PDO::FETCH_COLUMN);
+
+// Weekly applications
+if (in_array('application_date', $applications_columns)) {
+    $weekly_applications = $conn->query("SELECT COUNT(*) FROM applications WHERE application_date >= DATE_SUB(NOW(), INTERVAL 7 DAY)")->fetchColumn();
+} elseif (in_array('created_at', $applications_columns)) {
+    $weekly_applications = $conn->query("SELECT COUNT(*) FROM applications WHERE created_at >= DATE_SUB(NOW(), INTERVAL 7 DAY)")->fetchColumn();
+} else {
+    $weekly_applications = $candidates_count;
+    error_log("No date column found in applications table for weekly count");
+}
+
+// Monthly jobs
+if (in_array('posted_date', $jobs_columns)) {
+    $monthly_jobs = $conn->query("SELECT COUNT(*) FROM jobs WHERE posted_date >= DATE_SUB(NOW(), INTERVAL 30 DAY)")->fetchColumn();
+} elseif (in_array('created_at', $jobs_columns)) {
+    $monthly_jobs = $conn->query("SELECT COUNT(*) FROM jobs WHERE created_at >= DATE_SUB(NOW(), INTERVAL 30 DAY)")->fetchColumn();
+} else {
+    $monthly_jobs = $jobs_count;
+    error_log("No date column found in jobs table for monthly count");
+}
+
+// Active jobs
+if (in_array('is_archived', $jobs_columns)) {
+    $active_jobs = $conn->query("SELECT COUNT(*) FROM jobs WHERE is_archived = 0")->fetchColumn();
+    error_log("Active jobs count (is_archived = 0): $active_jobs");
+} elseif (in_array('status', $jobs_columns)) {
+    $active_jobs = $conn->query("SELECT COUNT(*) FROM jobs WHERE status = 'active'")->fetchColumn();
+    error_log("Active jobs count (status = 'active'): $active_jobs");
+} else {
+    $active_jobs = $jobs_count;
+    error_log("No status or is_archived column in jobs table, defaulting to total jobs: $active_jobs");
+}
+
+// Recent applications
+$recent_applications = $weekly_applications;
+
+// Pending interviews
+try {
+    $pending_interviews = $conn->query("SELECT COUNT(*) FROM interviews WHERE status = 'scheduled'")->fetchColumn();
+} catch (PDOException $e) {
+    $pending_interviews = 0;
+    error_log("Error fetching pending interviews: " . $e->getMessage());
+}
+
+// Hired candidates
+if (in_array('status', $applications_columns)) {
+    $hired_candidates = $conn->query("SELECT COUNT(*) FROM applications WHERE status = 'hired'")->fetchColumn();
+} else {
+    $hired_candidates = 0;
+    error_log("No status column in applications table for hired candidates");
+}
+
+// Top 5 jobs
+try {
+    $popular_jobs = $conn->query("SELECT j.job_title, COUNT(a.id) as application_count 
+                                 FROM jobs j LEFT JOIN applications a ON j.id = a.job_id 
+                                 GROUP BY j.id ORDER BY application_count DESC LIMIT 5")->fetchAll(PDO::FETCH_ASSOC);
+} catch (PDOException $e) {
+    $popular_jobs = [];
+    error_log("Error fetching popular jobs: " . $e->getMessage());
+}
+
+// Application trends
+$application_trends = [];
+if (in_array('application_date', $applications_columns)) {
+    $application_trends = $conn->query("SELECT DATE_FORMAT(application_date, '%Y-%m-%d') as day, 
+                                       COUNT(*) as count 
+                                       FROM applications 
+                                       WHERE application_date >= DATE_SUB(NOW(), INTERVAL 30 DAY) 
+                                       GROUP BY day ORDER BY day")->fetchAll(PDO::FETCH_ASSOC);
+} elseif (in_array('created_at', $applications_columns)) {
+    $application_trends = $conn->query("SELECT DATE_FORMAT(created_at, '%Y-%m-%d') as day, 
+                                       COUNT(*) as count 
+                                       FROM applications 
+                                       WHERE created_at >= DATE_SUB(NOW(), INTERVAL 30 DAY) 
+                                       GROUP BY day ORDER BY day")->fetchAll(PDO::FETCH_ASSOC);
+}
+
+// Prepare chart data
+$chart_labels = [];
+$chart_data = [];
+foreach ($application_trends as $trend) {
+    $chart_labels[] = date('M j', strtotime($trend['day']));
+    $chart_data[] = $trend['count'];
+}
+if (empty($chart_labels)) {
+    for ($i = 30; $i >= 0; $i--) {
+        $chart_labels[] = date('M j', strtotime("-$i days"));
+        $chart_data[] = rand(0, 5);
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard - Cinergie Recruiters</title>
-    <link rel="icon" type="image/svg+xml" href="https://cinergiedigital.com/favicon.svg">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Recruiter Dashboard - Cinergie</title>
+    <link rel="icon" href="https://cinergiedigital.com/favicon.svg" type="image/svg+xml">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
-        /* Reset and General Styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        :root {
+            --primary-color: #0056b3;
+            --secondary-color: #ffc107;
+            --accent-color: #17a2b8;
+            --dark-color: #343a40;
+            --light-color: #f8f9fa;
         }
-
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            background-color: #f3f2ef; /* LinkedIn's background gray */
-            color: #0a2239; /* Dark text for readability */
-            line-height: 1.6;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f7fa;
+            color: #333;
         }
-
-        /* Header Styles */
-        .header {
+        .dark-mode {
+            background-color: #121212 !important;
+            color: #e0e0e0 !important;
+        }
+        .sidebar {
+            height: 100vh;
             background-color: #ffffff;
-            border-bottom: 1px solid #e0e0e0;
-            padding: 12px 24px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
+            padding: 1rem;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
         }
-
-        .header .logo {
-            font-size: 24px;
-            font-weight: 700;
-            color: #0a66c2; /* LinkedIn blue */
+        .dark-mode .sidebar {
+            background-color: #1e1e1e;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
         }
-
-        .header .search-bar {
-            background-color: #edf3f8;
-            border-radius: 4px;
-            padding: 8px 16px;
-            width: 300px;
-            display: flex;
-            align-items: center;
+        .main {
+            margin-left: 250px;
+            padding: 2rem;
         }
-
-        .header .search-bar input {
+        .card {
+            background: white;
             border: none;
-            background: none;
-            outline: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            margin-bottom: 1.5rem;
+        }
+        .dark-mode .card {
+            background: #2d2d2d;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+        .stat-card {
+            border-left: 4px solid var(--primary-color);
+        }
+        .stat-card .icon {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+        }
+        .dark-mode .stat-card .icon {
+            color: var(--secondary-color);
+        }
+        .welcome-header {
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+        .welcome-header::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            right: -50%;
             width: 100%;
-            font-size: 14px;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+            transform: rotate(30deg);
         }
-
-        /* Sidenav Styles */
-        .sidenav {
-            width: 220px;
-            height: calc(100vh - 60px);
-            background-color: #ffffff;
-            border-right: 1px solid #e0e0e0;
-            position: fixed;
-            top: 60px;
-            left: 0;
-            padding: 16px 0;
-            box-sizing: border-box;
-            overflow-y: auto;
+        .dark-mode .welcome-header {
+            background: linear-gradient(135deg, #1a3a6a, #0d4d6e);
         }
-
-        .sidenav .admin-avatar {
-            display: block;
+        .welcome-msg {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        .welcome-sub {
+            opacity: 0.9;
+            font-weight: 300;
+        }
+        .toggle-btn {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            background: rgba(255,255,255,0.2);
+            border: none;
             width: 40px;
             height: 40px;
-            margin: 16px auto;
             border-radius: 50%;
-            object-fit: contain;
-        }
-
-        .sidenav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .sidenav ul li {
-            margin: 4px 0;
-        }
-
-        .sidenav ul li a {
             display: flex;
             align-items: center;
-            padding: 10px 24px;
-            color: #0a66c2;
-            text-decoration: none;
-            font-size: 14px;
-            font-weight: 600;
-            transition: background-color 0.2s, color 0.2s;
-        }
-
-        .sidenav ul li a:hover {
-            background-color: #e8f0fe;
-            color: #004182;
-        }
-
-        .submenu-toggle {
+            justify-content: center;
+            color: white;
             cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 10px 24px;
-            color: #0a66c2;
-            font-size: 14px;
-            font-weight: 600;
         }
-
-        .submenu-toggle::after {
-            content: '▾';
-            font-size: 12px;
-            transition: transform 0.2s;
+        .toggle-btn:hover {
+            background: rgba(255,255,255,0.3);
+            transform: scale(1.1);
         }
-
-        .submenu.active .submenu-toggle::after {
-            transform: rotate(180deg);
-        }
-
-        .submenu-items {
-            display: none;
-            background-color: #f8f9fa;
-            padding-left: 16px;
-        }
-
-        .submenu.active .submenu-items {
-            display: block;
-        }
-
-        .submenu-items li a {
-            padding: 8px 24px 8px 40px;
-            font-weight: 400;
-            color: #333;
-        }
-
-        .submenu-items li a:hover {
-            background-color: #e8f0fe;
-            color: #004182;
-        }
-
-        .admin-info {
-            position: absolute;
-            bottom: 16px;
+        .chart-container {
+            position: relative;
+            height: 300px;
             width: 100%;
-            padding: 16px 24px;
-            box-sizing: border-box;
-            border-top: 1px solid #e0e0e0;
         }
-
-        .admin-info .admin-name {
-            display: block;
-            font-size: 14px;
-            color: #333;
-            margin-bottom: 8px;
+        .job-list {
+            list-style-type: none;
+            padding: 0;
         }
-
-        .admin-info .logout-button {
-            display: inline-block;
-            padding: 8px 16px;
-            background-color: #0a66c2;
-            color: #fff;
+        .job-list li {
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .dark-mode .job-list li {
+            border-bottom: 1px solid #444;
+        }
+        .job-list li:last-child {
+            border-bottom: none;
+        }
+        .job-list li:hover {
+            background: rgba(0,0,0,0.03);
+        }
+        .dark-mode .job-list li:hover {
+            background: rgba(255,255,255,0.05);
+        }
+        .badge-count {
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 10px;
+            padding: 0.25rem 0.5rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+        .dark-mode .badge-count {
+            background-color: var(--secondary-color);
+            color: var(--dark-color);
+        }
+        .card-header {
+            background: transparent;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            padding: 1rem 1.5rem;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .dark-mode .card-header {
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        .card-header .view-all {
+            font-size: 0.85rem;
+            color: var(--primary-color);
             text-decoration: none;
-            border-radius: 4px;
-            font-size: 12px;
-            font-weight: 600;
-            transition: background-color 0.2s;
         }
-
-        .admin-info .logout-button:hover {
-            background-color: #004182;
+        .dark-mode .card-header .view-all {
+            color: var(--secondary-color);
         }
-        
-
-        /* Main Content */
-        .main-content {
-            margin-left: 220px;
-            padding: 84px 24px 24px;
-            max-width: 1200px;
-            margin-right: auto;
+        .progress-thin {
+            height: 6px;
+            border-radius: 3px;
         }
-
-        .welcome-section {
-            background-color: #ffffff;
-            border-radius: 8px;
-            padding: 24px;
-            margin-bottom: 24px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
-            display: flex;
-            align-items: center;
-            gap: 16px;
+        .progress-bar {
+            background-color: var(--primary-color);
         }
-
-        .welcome-section img {
-            width: 64px;
-            height: 64px;
-            border-radius: 50%;
-            object-fit: cover;
+        .activity-item {
+            padding: 0.75rem 0;
+            border-bottom: 1px dashed #eee;
         }
-
-        .welcome-section h1 {
-            font-size: 24px;
-            font-weight: 600;
-            color: #0a66c2;
-            margin-bottom: 4px;
+        .dark-mode .activity-item {
+            border-bottom: 1px dashed #444;
         }
-
-        .welcome-section p {
-            font-size: 16px;
-            color: #666;
+        .activity-item:last-child {
+            border-bottom: none;
         }
-
-        /* Cards Container */
-        .cards-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 24px;
+        .activity-time {
+            font-size: 0.75rem;
+            color: #6c757d;
         }
-        
-
-        /* Card Styles */
-        .card {
-            background-color: #ffffff;
-            border-radius: 8px;
-            border: 1px solid #e0e0e0;
-            padding: 16px;
-            display: flex;
-            align-items: center;
-            transition: box-shadow 0.2s, transform 0.2s;
-        }
-
-        .card:hover {
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transform: translateY(-2px);
-        }
-
-        .card-icon {
-            font-size: 24px;
-            color: #0a66c2;
-            margin-right: 16px;
-        }
-
-        .card-content h2 {
-            font-size: 16px;
-            font-weight: 600;
-            color: #0a2239;
-            margin-bottom: 8px;
-        }
-
-        .card-content p {
-            font-size: 24px;
-            font-weight: 700;
-            color: #0a66c2;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .main-content {
+        @media (max-width: 992px) {
+            .main {
                 margin-left: 0;
-                padding: 76px 16px 16px;
-            }
-
-            .sidenav {
-                width: 100%;
-                height: auto;
-                position: static;
-                border-right: none;
-                border-bottom: 1px solid #e0e0e0;
-            }
-
-            .welcome-section {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .welcome-section img {
-                margin-bottom: 16px;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        
-        <div class="logo">Cinergie Recruiters</div>
-      
-    </header>
-
-    <!-- Sidenav -->
-    <nav class="sidenav">
-        <img src="https://cinergiedigital.com/favicon.svg" alt="Admin Avatar" class="admin-avatar">
-        <ul>
-            <li><a href="index.php">Dashboard</a></li>
-               
-            <li class="submenu">
-                <a href="javascript:void(0)" class="submenu-toggle">Jobs</a>
-                <ul class="submenu-items">
-                    <li><a href="add_job.php">Add Job</a></li>
-                    <li><a href="jobs.php">List Jobs</a></li>
-                </ul>
-               
-            </li>
-            <li class="submenu">
-                <a href="javascript:void(0)" class="submenu-toggle">Categories</a>
-                <ul class="submenu-items">
-                    <li><a href="add_category.php">Add Category</a></li>
-                    <li><a href="categories.php">List Categories</a></li>
-                </ul>
-            </li>
-           <li><a href="job_reference.php">candidate cv</a></li> 
-           <li><a href="candidates.php">previous candidates</a></li>  
-           
-        <div class="admin-info">
-            <span class="admin-name"><?php echo htmlspecialchars($admin_name); ?></span>
-            <a href="logout.php" class="logout-button">Logout</a>
+<?php include 'sidenav.php'; ?>
+<div class="main">
+    <div class="container-fluid">
+        <!-- Welcome Header -->
+        <div class="welcome-header">
+            <button class="toggle-btn" id="darkModeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+            <h1 class="welcome-msg">Fly Dubai Recruiting Team <?php echo htmlspecialchars($admin_name); ?></h1>
+            <p class="welcome-sub">Here's what's happening with your recruitment pipeline today</p>
         </div>
-    </nav>
-
-    <!-- Main Content -->
-    <div class="main-content">
-        <div class="welcome-section">
-           
-            <div>
-                <h1>Welcome, <?php echo htmlspecialchars($admin_name); ?>!</h1>
-                <p>At Cinergie Recruiters, you're shaping the future by connecting top talent with exciting opportunities. Let's make impactful hires today!</p>
-            </div>
-        </div>
-
-        <div class="cards-container">
-            <!-- Candidates Card -->
-            <div class="card">
-                <div class="card-icon">
-                    <i class="fas fa-users"></i>
-                </div>
-                <div class="card-content">
-                    <h2>Candidates</h2>
-                    <p><?php echo $candidates_count; ?></p>
+        <!-- Stats Cards Row -->
+        <div class="row">
+            <!-- Total Jobs -->
+            <div class="col-md-6 col-xl-3">
+                <div class="card stat-card h-100">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <h6 class="text-muted mb-2">TOTAL JOBS</h6>
+                                <h3 class="mb-0"><?php echo $jobs_count; ?></h3>
+                                <small class="text-success"><i class="fas fa-arrow-up"></i> <?php echo $monthly_jobs; ?> this month</small>
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <!-- Active Jobs Card -->
-            <div class="card">
-                <div class="card-icon">
-                    <i class="fas fa-layer-group"></i>
-                </div>
-                <div class="card-content">
-                    <h2>Active Jobs</h2>
-                    <p><?php echo $categories_count; ?></p>
+            <!-- Total Candidates -->
+            <div class="col-md-6 col-xl-3">
+                <div class="card stat-card h-100">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <h6 class="text-muted mb-2">TOTAL CANDIDATES</h6>
+                                <h3 class="mb-0"><?php echo $candidates_count; ?></h3>
+                                <small class="text-success"><i class="fas fa-arrow-up"></i> <?php echo $weekly_applications; ?> this week</small>
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <!-- Tests Card -->
-            
+            <!-- Active Jobs -->
+            <div class="col-md-6 col-xl-3">
+                <div class="card stat-card h-100">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <h6 class="text-muted mb-2">ACTIVE JOBS</h6>
+                                <h3 class="mb-0"><?php echo $active_jobs; ?></h3>
+                                <small class="text-muted">Currently recruiting</small>
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-bullhorn"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
-  
-
-    <script>
-        // Toggle sub-menus
-        document.querySelectorAll('.submenu-toggle').forEach(toggle => {
-            toggle.addEventListener('click', function () {
-                const submenu = this.parentElement;
-                submenu.classList.toggle('active');
-            });
-        });
-    </script>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    const body = document.body;
+    if (localStorage.getItem('darkMode') === 'enabled') {
+        body.classList.add('dark-mode');
+        darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+    }
+    darkModeToggle.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+        if (body.classList.contains('dark-mode')) {
+            localStorage.setItem('darkMode', 'enabled');
+            darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+        } else {
+            localStorage.setItem('darkMode', 'disabled');
+            darkModeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+        }
+    });
+</script>
 </body>
 </html>

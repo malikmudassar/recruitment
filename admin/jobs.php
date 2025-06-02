@@ -9,9 +9,11 @@ if (!isset($_SESSION['admin_id'])) {
 
 include '../db.php'; // Include database connection
 $admin_name = $_SESSION['admin_name'];
-// Fetch all jobs with category names
+
+// Fetch all jobs with category names and archived status
 $stmt = $conn->query("
-    SELECT j.job_id, j.title, j.description, j.requirements, j.salary_package, j.perks, j.location, c.category_name 
+    SELECT j.job_id, j.title, j.description, j.requirements, j.salary_package, j.perks, 
+           j.location, j.is_archived, c.category_name 
     FROM Jobs j
     INNER JOIN TestCategories c ON j.category_id = c.category_id
 ");
@@ -26,7 +28,6 @@ $jobs = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <title>Jobs - Admin Panel</title>
     <link rel="icon" type="image/svg+xml" href="https://cinergiedigital.com/favicon.svg">
     <style>
-        /* General Styles */
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
@@ -34,26 +35,20 @@ $jobs = $stmt->fetchAll(PDO::FETCH_ASSOC);
             background-color: #f4f4f9;
             color: #333;
         }
-
-        /* Table Styles */
         table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 1rem;
         }
-
         table th, table td {
             padding: 0.75rem;
             border: 1px solid #ddd;
             text-align: left;
         }
-
         table th {
             background-color: #3498db;
             color: #fff;
         }
-
-        /* Buttons */
         .add-button {
             display: inline-block;
             padding: 0.5rem 1rem;
@@ -63,20 +58,23 @@ $jobs = $stmt->fetchAll(PDO::FETCH_ASSOC);
             border-radius: 4px;
             margin-bottom: 1rem;
         }
-
         .add-button:hover {
             background-color: #27ae60;
         }
-
         .edit-button {
             color: #3498db;
             text-decoration: none;
         }
-
-        .delete-button {
-            color: #e74c3c;
+        .archive-button {
+            color: #e67e22;
             text-decoration: none;
             margin-left: 0.5rem;
+        }
+        .status-archived {
+            color: #e74c3c;
+        }
+        .status-active {
+            color: #2ecc71;
         }
     </style>
 </head>
@@ -95,6 +93,7 @@ $jobs = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     <th>Category</th>
                     <th>Location</th>
                     <th>Salary Package</th>
+                    <th>Status</th>
                     <th>Actions</th>
                 </tr>
             </thead>
@@ -106,9 +105,16 @@ $jobs = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         <td><?php echo $job['category_name']; ?></td>
                         <td><?php echo $job['location']; ?></td>
                         <td><?php echo $job['salary_package']; ?></td>
+                        <td class="<?php echo $job['is_archived'] ? 'status-archived' : 'status-active'; ?>">
+                            <?php echo $job['is_archived'] ? 'Archived' : 'Active'; ?>
+                        </td>
                         <td>
                             <a href="edit_job.php?id=<?php echo $job['job_id']; ?>" class="edit-button">Edit</a>
-                            <a href="delete_job.php?id=<?php echo $job['job_id']; ?>" class="delete-button" onclick="return confirm('Are you sure?');">Delete</a>
+                            <a href="toggle_archive.php?id=<?php echo $job['job_id']; ?>" 
+                               class="archive-button"
+                               onclick="return confirm('Are you sure you want to <?php echo $job['is_archived'] ? 'unarchive' : 'archive'; ?> this job?');">
+                                <?php echo $job['is_archived'] ? 'Unarchive' : 'Archive'; ?>
+                            </a>
                         </td>
                     </tr>
                 <?php endforeach; ?>

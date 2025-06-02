@@ -521,17 +521,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Initialize question count
         let questionCount = 0;
 
-        // Add default numerical question
-        window.addEventListener('load', () => {
-            addQuestion();
-            const firstQuestion = document.getElementById(`question-0`);
-            const firstType = document.getElementById(`type-0`);
-            const firstMustHave = document.getElementById(`must-have-0`);
-            firstQuestion.value = 'How would you rate yourself?';
-            firstType.value = 'Numerical';
-            firstMustHave.value = '8';
-            toggleOptions(firstType, 0);
-        });
+        // // Add default numerical question
+        // window.addEventListener('load', () => {
+        //     addQuestion();
+        //     const firstQuestion = document.getElementById(`question-0`);
+        //     const firstType = document.getElementById(`type-0`);
+        //     const firstMustHave = document.getElementById(`must-have-0`);
+        //     firstQuestion.value = 'How would you rate yourself?';
+        //     firstType.value = 'Numerical';
+        //     firstMustHave.value = '8';
+        //     toggleOptions(firstType, 0);
+        // });
 
         // Populate fields based on category selection
         const categorySelect = document.getElementById('category_id');

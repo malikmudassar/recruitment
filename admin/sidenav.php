@@ -158,8 +158,9 @@
                 
             </li>
           
-         <li><a href="job_reference.php">candidate cv</a></li> 
-         <li><a href="candidates.php">previous candidates</a></li> 
+         <li><a href="job_reference.php">Candidate cv</a></li> 
+          
+
          <div class="admin-info">
             <span class="admin-name"><?php echo htmlspecialchars($admin_name); ?></span>
             <a href="logout.php" class="logout-button">Logout</a>

@@ -24,10 +24,12 @@ try {
             j.location,
             j.created_at,
             j.screening_questions,
+            j.is_archived,
             j.reference,
             c.category_name
         FROM jobs j
         LEFT JOIN TestCategories c ON j.category_id = c.category_id
+          WHERE j.is_archived = 0
         ORDER BY j.created_at DESC
     ");
     $stmt->execute();
