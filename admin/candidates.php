@@ -1,4 +1,4 @@
-<?php
+`````````<?php
 session_start();
 
 // Redirect to login if not logged in
@@ -31,6 +31,7 @@ try {
             a.years_of_experience, 
             a.linkedin_profile, 
             a.cv_path, 
+            a.status,
             a.answers, 
             a.notice_period,
             a.salary_accept,
@@ -432,6 +433,26 @@ try {
             left: 10px;
             margin-bottom:2rem;
         }
+         .status-badge {
+            background: #0073b1;
+            color: #ffffff;
+            padding: 0.25rem 0.5rem;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            position: absolute;
+            top: 10px;
+            left: 100px;
+            margin-bottom:2rem;
+        }
+        .status-accepted {
+            background: #28a745; /* Green */
+        }
+        .status-rejected {
+            background: #dc3545; /* Red */
+        }
+        .status-maybe {
+            background: #ffc107; /* Yellow */
+        }
         .card-menu {
             position: absolute;
             top: 10px;
@@ -701,16 +722,23 @@ try {
                                      data-details='<?php echo htmlspecialchars(json_encode($details), ENT_QUOTES, 'UTF-8'); ?>'
                                      data-application-id="<?php echo htmlspecialchars($app['application_id'] ?? '', ENT_QUOTES, 'UTF-8'); ?>">
                                     <div class="score-badge">Score: <?php echo htmlspecialchars($app['score'] . '/' . $app['max_score'], ENT_QUOTES, 'UTF-8'); ?></div>
+                                     <div class="status-badge status-<?php echo htmlspecialchars(strtolower($app['status']), ENT_QUOTES, 'UTF-8'); ?>">
+    <strong>Status:</strong> <?php echo htmlspecialchars($app['status'], ENT_QUOTES, 'UTF-8'); ?>
+</div>
                                     <div class="card-menu">
                                         <button class="menu-btn" aria-label="More options">⋮</button>
                                         <div class="menu-dropdown">
                                             <a href="delete_application.php?id=<?php echo urlencode($app['application_id']); ?>&job_id=<?php echo urlencode($_GET['job_id'] ?? ''); ?>" class="delete-button" onclick="return confirm('Are you sure you want to delete this application?');">Delete</a>
+                                        <a href="accept_application.php?id=<?php echo urlencode($app['application_id']); ?>&job_id=<?php echo urlencode($_GET['job_id'] ?? ''); ?>" class="accept-button" onclick="return confirm('Are you sure you want to accept this application?');">Accept</a>
+                                         <a href="reject_application.php?id=<?php echo urlencode($app['application_id']); ?>&job_id=<?php echo urlencode($_GET['job_id'] ?? ''); ?>" class="reject-button" onclick="return confirm('Are you sure you want to reject this application?');">Reject</a>
+                                          <a href="Maybe_application.php?id=<?php echo urlencode($app['application_id']); ?>&job_id=<?php echo urlencode($_GET['job_id'] ?? ''); ?>" class="Maybe-button" onclick="return confirm('Are you sure you want to May be this application?');">Maybe</a>
                                         </div>
                                     </div>
                                     
                                     <h3><?php echo htmlspecialchars($app['name'], ENT_QUOTES, 'UTF-8'); ?></h3>
                                     <p><strong>Reference ID:</strong> <?php echo htmlspecialchars($app['reference'], ENT_QUOTES, 'UTF-8'); ?></p>
-                                    <p><strong>Job:</strong> <?php echo htmlspecialchars($app['job_title'] ?? 'Unknown Job (ID: ' . $app['job_id'] . ')', ENT_QUOTES, 'UTF-8'); ?></p>
+                                    
+                                                <p><strong>Job:</strong> <?php echo htmlspecialchars($app['job_title'] ?? 'Unknown Job (ID: ' . $app['job_id'] . ')', ENT_QUOTES, 'UTF-8'); ?></p>
                                     
                                 </div>
                             <?php endif; ?>
@@ -928,4 +956,4 @@ try {
         });
     </script>
 </body>
-</html>
+</html>`````````

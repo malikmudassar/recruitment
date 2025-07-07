@@ -5531,3 +5531,33 @@ Stack trace:
 )
 
 [02-Jun-2025 09:45:06 Europe/Berlin] Email sent to arbaz.khan@cinergiedigital.com: Confirmation
+[07-Jul-2025 08:30:43 Europe/Berlin] POST: Array
+(
+    [job_id] => 79
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 14
+    [salaryPackage] => Yes
+    [reference] => e
+    [job_title] => net dev
+    [screening_questions] => []
+)
+
+[07-Jul-2025 08:30:43 Europe/Berlin] FILES: Array
+(
+    [cv] => Array
+        (
+            [name] => Screenshot 2024-01-01 160853.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php1EE3.tmp
+            [error] => 0
+            [size] => 45037
+        )
+
+)
+
+[07-Jul-2025 08:30:43 Europe/Berlin] PHP Warning:  Undefined variable $answers in C:\xampp\htdocs\recruitment\admin\save_application.php on line 88
+[07-Jul-2025 08:30:45 Europe/Berlin] Email sent to muhammadarbazkhan2@gmail.com: Confirmation
