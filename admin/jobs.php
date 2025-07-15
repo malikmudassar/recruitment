@@ -110,6 +110,7 @@ $jobs = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         </td>
                         <td>
                             <a href="edit_job.php?id=<?php echo $job['job_id']; ?>" class="edit-button">Edit</a>
+                            <a href="delete_job.php?id=<?php echo $job['job_id']; ?>" class="delete-button" onclick="return confirm('Are you sure?');">Delete</a>
                             <a href="toggle_archive.php?id=<?php echo $job['job_id']; ?>" 
                                class="archive-button"
                                onclick="return confirm('Are you sure you want to <?php echo $job['is_archived'] ? 'unarchive' : 'archive'; ?> this job?');">

@@ -561,7 +561,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             }
 
             // Update job title and description, but not perks
-            document.getElementById('title').value = categoryName !== 'Select Category' ? categoryName : '';
+            // document.getElementById('title').value = categoryName !== 'Select Category' ? categoryName : '';
             document.getElementById('description').value = description;
             document.getElementById('perks').value = ''; // Clear perks on category change
             document.getElementById('location').value = ''; // Reset location

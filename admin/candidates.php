@@ -724,7 +724,7 @@ try {
                                     <div class="score-badge">Score: <?php echo htmlspecialchars($app['score'] . '/' . $app['max_score'], ENT_QUOTES, 'UTF-8'); ?></div>
                                      <div class="status-badge status-<?php echo htmlspecialchars(strtolower($app['status']), ENT_QUOTES, 'UTF-8'); ?>">
     <strong>Status:</strong> <?php echo htmlspecialchars($app['status'], ENT_QUOTES, 'UTF-8'); ?>
-</div>
+</div>f
                                     <div class="card-menu">
                                         <button class="menu-btn" aria-label="More options">⋮</button>
                                         <div class="menu-dropdown">
