@@ -5561,3 +5561,412 @@ Stack trace:
 
 [07-Jul-2025 08:30:43 Europe/Berlin] PHP Warning:  Undefined variable $answers in C:\xampp\htdocs\recruitment\admin\save_application.php on line 88
 [07-Jul-2025 08:30:45 Europe/Berlin] Email sent to muhammadarbazkhan2@gmail.com: Confirmation
+[12-Sep-2025 09:06:53 Europe/Berlin] POST: Array
+(
+    [job_id] => 82
+    [fullName] => jasperadmin
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 12
+    [linkedin_profile] => lindin
+    [noticePeriod] => 34
+    [salaryPackage] => Yes
+    [reference] => FZ-AE-32
+    [job_title] => me
+    [screening_questions] => []
+)
+
+[12-Sep-2025 09:06:53 Europe/Berlin] FILES: Array
+(
+    [cv] => Array
+        (
+            [name] => Screenshot 2024-01-01 160853.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php449A.tmp
+            [error] => 0
+            [size] => 45037
+        )
+
+)
+
+[12-Sep-2025 09:06:53 Europe/Berlin] PHP Warning:  Undefined variable $answers in C:\xampp\htdocs\recruitment\admin\save_application.php on line 88
+[12-Sep-2025 09:06:57 Europe/Berlin] Email sent to muhammadarbazkhan2@gmail.com: Confirmation
+[28-Oct-2025 08:28:41 Europe/Berlin] POST: Array
+(
+    [job_id] => 82
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 2
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 30
+    [salaryPackage] => Yes
+    [reference] => FZ-AE-32
+    [job_title] => me
+    [screening_questions] => []
+)
+
+[28-Oct-2025 08:28:41 Europe/Berlin] FILES: Array
+(
+    [cv] => Array
+        (
+            [name] => Screenshot 2024-01-01 160853.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\phpFF4A.tmp
+            [error] => 0
+            [size] => 45037
+        )
+
+)
+
+[28-Oct-2025 08:28:42 Europe/Berlin] Exception: You have already applied for this job
+[28-Oct-2025 08:29:19 Europe/Berlin] POST: Array
+(
+    [job_id] => 82
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 2
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 30
+    [salaryPackage] => Yes
+    [reference] => FZ-AE-32
+    [job_title] => me
+    [screening_questions] => []
+)
+
+[28-Oct-2025 08:29:19 Europe/Berlin] FILES: Array
+(
+    [cv] => Array
+        (
+            [name] => Screenshot 2024-01-01 160853.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php9B5C.tmp
+            [error] => 0
+            [size] => 45037
+        )
+
+)
+
+[28-Oct-2025 08:29:19 Europe/Berlin] PHP Warning:  Undefined variable $answers in C:\xampp\htdocs\recruitment\admin\save_application.php on line 88
+[28-Oct-2025 08:29:19 Europe/Berlin] Email error: SMTP Error: Could not connect to SMTP host. Failed to connect to server SMTP server error: Failed to connect to server Additional SMTP info: php_network_getaddresses: getaddrinfo failed: No such host is known. 
+[23-Dec-2025 09:53:30 Europe/Berlin] POST: Array
+(
+    [job_id] => 84
+    [fullName] => arbaz khan
+    [email] => muhammadarbazkhan2@gmail.comm
+    [phoneNo] => 03020473547
+    [experience] => 1
+    [linkedin_profile] => linkedIn.com
+    [noticePeriod] => 12
+    [salaryPackage] => Yes
+    [reference] => FZ-AE-32
+    [job_title] => master
+    [screening_questions] => [{"question":"Have you personally tested airline booking, check-in, or ancillary flows using airline systems (PSS or airline backend systems)?","answer":["java"]},{"question":"Have you personally tested REST and/or SOAP APIs using Postman (including request/response validation, business rules, and error handling)?","answer":"Yes"}]
+)
+
+[23-Dec-2025 09:53:30 Europe/Berlin] FILES: Array
+(
+    [cv] => Array
+        (
+            [name] => Arbaz Khan cv-1.docx
+            [type] => application/vnd.openxmlformats-officedocument.wordprocessingml.document
+            [tmp_name] => C:\xampp\tmp\phpE4A5.tmp
+            [error] => 0
+            [size] => 70288
+        )
+
+)
+
+[23-Dec-2025 09:53:32 Europe/Berlin] Email error: SMTP Error: Could not authenticate.
+[19-Jan-2026 14:11:53 Europe/Berlin] POST: Array
+(
+    [job_id] => 88
+    [fullName] => arbaz
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 2
+    [linkedin_profile] => 2
+    [noticePeriod] => 30
+    [salaryPackage] => Yes
+    [reference] => dx
+    [job_title] => senior
+    [screening_questions] => [{"question":"mai kon u","answer":"Yes"}]
+)
+
+[19-Jan-2026 14:11:53 Europe/Berlin] FILES: Array
+(
+    [cv] => Array
+        (
+            [name] => Screenshot 2023-12-27 120811.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php30B6.tmp
+            [error] => 0
+            [size] => 425255
+        )
+
+)
+
+[19-Jan-2026 14:11:57 Europe/Berlin] Email error: SMTP Error: Could not authenticate.
+[19-Jan-2026 14:14:03 Europe/Berlin] POST: Array
+(
+    [job_id] => 87
+    [fullName] => arbaz
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 2
+    [linkedin_profile] => 2
+    [noticePeriod] => 30
+    [salaryPackage] => Yes
+    [reference] => FZ-AE-340
+    [job_title] => Senior QA Engineer (Manual and Automation – Robot Framework)
+    [screening_questions] => []
+)
+
+[19-Jan-2026 14:14:03 Europe/Berlin] FILES: Array
+(
+    [cv] => Array
+        (
+            [name] => Screenshot 2023-12-27 120811.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php2FC3.tmp
+            [error] => 0
+            [size] => 425255
+        )
+
+)
+
+[19-Jan-2026 14:14:03 Europe/Berlin] PHP Warning:  Undefined variable $answers in C:\xampp\htdocs\recruitment\admin\save_application.php on line 88
+[19-Jan-2026 14:14:07 Europe/Berlin] Email error: SMTP Error: Could not authenticate.
+[19-Jan-2026 14:15:57 Europe/Berlin] POST: Array
+(
+    [job_id] => 87
+    [fullName] => arbaz
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 2
+    [linkedin_profile] => 2
+    [noticePeriod] => 30
+    [salaryPackage] => Yes
+    [reference] => FZ-AE-340
+    [job_title] => Senior QA Engineer (Manual and Automation – Robot Framework)
+    [screening_questions] => [{"question":"Have you personally designed and implemented Robot Framework automation frameworks end-to-end (test suites, resource files, variables, execution structure)?","answer":"Yes"}]
+)
+
+[19-Jan-2026 14:15:57 Europe/Berlin] FILES: Array
+(
+    [cv] => Array
+        (
+            [name] => Screenshot 2023-12-27 120811.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\phpEC59.tmp
+            [error] => 0
+            [size] => 425255
+        )
+
+)
+
+[19-Jan-2026 14:15:57 Europe/Berlin] Exception: You have already applied for this job
+[19-Jan-2026 14:16:18 Europe/Berlin] POST: Array
+(
+    [job_id] => 87
+    [fullName] => arbaz
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 2
+    [linkedin_profile] => 2
+    [noticePeriod] => 30
+    [salaryPackage] => Yes
+    [reference] => FZ-AE-340
+    [job_title] => Senior QA Engineer (Manual and Automation – Robot Framework)
+    [screening_questions] => [{"question":"Have you personally designed and implemented Robot Framework automation frameworks end-to-end (test suites, resource files, variables, execution structure)?","answer":"Yes"}]
+)
+
+[19-Jan-2026 14:16:18 Europe/Berlin] FILES: Array
+(
+    [cv] => Array
+        (
+            [name] => Screenshot 2023-12-27 120811.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php3C7E.tmp
+            [error] => 0
+            [size] => 425255
+        )
+
+)
+
+[19-Jan-2026 14:16:22 Europe/Berlin] Email error: SMTP Error: Could not authenticate.
+[19-Jan-2026 14:18:24 Europe/Berlin] POST: Array
+(
+    [job_id] => 87
+    [fullName] => arbaz
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 2
+    [linkedin_profile] => 2
+    [noticePeriod] => 30
+    [salaryPackage] => Yes
+    [reference] => FZ-AE-340
+    [job_title] => Senior QA Engineer (Manual and Automation – Robot Framework)
+    [screening_questions] => [{"question":"Have you personally designed and implemented Robot Framework automation frameworks end-to-end (test suites, resource files, variables, execution structure)?","answer":"Yes"},{"question":"Have you personally identified, debugged, and stabilized flaky or unstable automated tests in regression suites?","answer":"Yes"}]
+)
+
+[19-Jan-2026 14:18:24 Europe/Berlin] FILES: Array
+(
+    [cv] => Array
+        (
+            [name] => Screenshot 2023-12-27 120811.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php2AD1.tmp
+            [error] => 0
+            [size] => 425255
+        )
+
+)
+
+[19-Jan-2026 14:18:28 Europe/Berlin] Email error: SMTP Error: Could not authenticate.
+[19-Jan-2026 14:19:40 Europe/Berlin] POST: Array
+(
+    [job_id] => 87
+    [fullName] => arbaz
+    [email] => test@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 2
+    [linkedin_profile] => 2
+    [noticePeriod] => 30
+    [salaryPackage] => No
+    [reference] => FZ-AE-340
+    [job_title] => Senior QA Engineer (Manual and Automation – Robot Framework)
+    [screening_questions] => [{"question":"Have you personally designed and implemented Robot Framework automation frameworks end-to-end (test suites, resource files, variables, execution structure)?","answer":"No"},{"question":"Have you personally identified, debugged, and stabilized flaky or unstable automated tests in regression suites?","answer":"No"}]
+)
+
+[19-Jan-2026 14:19:40 Europe/Berlin] FILES: Array
+(
+    [cv] => Array
+        (
+            [name] => Screenshot 2023-12-27 120811.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php5151.tmp
+            [error] => 0
+            [size] => 425255
+        )
+
+)
+
+[19-Jan-2026 14:19:43 Europe/Berlin] Email error: SMTP Error: Could not authenticate.
+[19-Jan-2026 14:22:27 Europe/Berlin] POST: Array
+(
+    [job_id] => 87
+    [fullName] => arbaz
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 2
+    [linkedin_profile] => 2
+    [noticePeriod] => 30
+    [salaryPackage] => Yes
+    [reference] => FZ-AE-340
+    [job_title] => Senior QA Engineer (Manual and Automation – Robot Framework)
+    [screening_questions] => [{"question":"Have you personally designed and implemented Robot Framework automation frameworks end-to-end (test suites, resource files, variables, execution structure)?","answer":"Yes"},{"question":"Have you personally identified, debugged, and stabilized flaky or unstable automated tests in regression suites?","answer":"Yes"},{"question":"Is it acceptable for a senior QA engineer to rely mainly on automation results and skip deep manual or exploratory testing for UI-heavy, business-critical applications?","answer":"Yes"}]
+)
+
+[19-Jan-2026 14:22:27 Europe/Berlin] FILES: Array
+(
+    [cv] => Array
+        (
+            [name] => Screenshot 2023-12-27 120811.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\phpDFDD.tmp
+            [error] => 0
+            [size] => 425255
+        )
+
+)
+
+[19-Jan-2026 14:22:27 Europe/Berlin] Exception: You have already applied for this job
+[19-Jan-2026 14:22:58 Europe/Berlin] POST: Array
+(
+    [job_id] => 87
+    [fullName] => arbaz
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 2
+    [linkedin_profile] => 2
+    [noticePeriod] => 30
+    [salaryPackage] => Yes
+    [reference] => FZ-AE-340
+    [job_title] => Senior QA Engineer (Manual and Automation – Robot Framework)
+    [screening_questions] => [{"question":"Have you personally designed and implemented Robot Framework automation frameworks end-to-end (test suites, resource files, variables, execution structure)?","answer":"Yes"},{"question":"Have you personally identified, debugged, and stabilized flaky or unstable automated tests in regression suites?","answer":"Yes"},{"question":"Is it acceptable for a senior QA engineer to rely mainly on automation results and skip deep manual or exploratory testing for UI-heavy, business-critical applications?","answer":"Yes"}]
+)
+
+[19-Jan-2026 14:22:58 Europe/Berlin] FILES: Array
+(
+    [cv] => Array
+        (
+            [name] => Screenshot 2023-12-27 120811.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php5750.tmp
+            [error] => 0
+            [size] => 425255
+        )
+
+)
+
+[19-Jan-2026 14:23:01 Europe/Berlin] Email error: SMTP Error: Could not authenticate.
+[19-Jan-2026 14:25:59 Europe/Berlin] POST: Array
+(
+    [job_id] => 87
+    [fullName] => arbaz
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 2
+    [linkedin_profile] => 2
+    [noticePeriod] => 30
+    [salaryPackage] => Yes
+    [reference] => FZ-AE-340
+    [job_title] => Senior QA Engineer (Manual and Automation – Robot Framework)
+    [screening_questions] => [{"question":"Have you personally designed and implemented Robot Framework automation frameworks end-to-end (test suites, resource files, variables, execution structure)?","answer":"Yes"},{"question":"Have you personally identified, debugged, and stabilized flaky or unstable automated tests in regression suites?","answer":"Yes"},{"question":"Is it acceptable for a senior QA engineer to rely mainly on automation results and skip deep manual or exploratory testing for UI-heavy, business-critical applications?","answer":"No"},{"question":"Have you logged and managed defects end-to-end in enterprise tools (such as Azure DevOps), including prioritization and collaboration with developers?","answer":"Yes"}]
+)
+
+[19-Jan-2026 14:25:59 Europe/Berlin] FILES: Array
+(
+    [cv] => Array
+        (
+            [name] => Screenshot 2023-12-27 120811.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php1BEF.tmp
+            [error] => 0
+            [size] => 425255
+        )
+
+)
+
+[19-Jan-2026 14:25:59 Europe/Berlin] Exception: You have already applied for this job
+[19-Jan-2026 14:26:16 Europe/Berlin] POST: Array
+(
+    [job_id] => 87
+    [fullName] => arbaz
+    [email] => muhammadarbazkhan2@gmail.com
+    [phoneNo] => 03020473547
+    [experience] => 2
+    [linkedin_profile] => 2
+    [noticePeriod] => 30
+    [salaryPackage] => Yes
+    [reference] => FZ-AE-340
+    [job_title] => Senior QA Engineer (Manual and Automation – Robot Framework)
+    [screening_questions] => [{"question":"Have you personally designed and implemented Robot Framework automation frameworks end-to-end (test suites, resource files, variables, execution structure)?","answer":"Yes"},{"question":"Have you personally identified, debugged, and stabilized flaky or unstable automated tests in regression suites?","answer":"Yes"},{"question":"Is it acceptable for a senior QA engineer to rely mainly on automation results and skip deep manual or exploratory testing for UI-heavy, business-critical applications?","answer":"No"},{"question":"Have you logged and managed defects end-to-end in enterprise tools (such as Azure DevOps), including prioritization and collaboration with developers?","answer":"Yes"}]
+)
+
+[19-Jan-2026 14:26:16 Europe/Berlin] FILES: Array
+(
+    [cv] => Array
+        (
+            [name] => Screenshot 2023-12-27 120811.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php5DAC.tmp
+            [error] => 0
+            [size] => 425255
+        )
+
+)
+
+[19-Jan-2026 14:26:20 Europe/Berlin] Email error: SMTP Error: Could not authenticate.

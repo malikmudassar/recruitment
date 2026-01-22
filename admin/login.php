@@ -10,13 +10,27 @@ if (isset($_SESSION['admin_id'])) {
 
 // Handle login form submission
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $email = $_POST['email'];
+
+    $email = trim($_POST['email']);
     $password = $_POST['password'];
 
-    // Validate credentials (placeholder logic)
-    if ($email === 'admin@example.com' && $password === 'password') {
-        $_SESSION['admin_id'] = 1;
-        $_SESSION['admin_name'] = 'Admin';
+    // Fetch admin info from DB
+    $stmt = $conn->prepare(
+        "SELECT admin_id, name, password, role FROM admins WHERE email = :email"
+    );
+    $stmt->execute([':email' => $email]);
+    $admin = $stmt->fetch(PDO::FETCH_ASSOC);
+
+    if ($admin && password_verify($password, $admin['password'])) {
+
+        // Regenerate session ID for security
+        session_regenerate_id(true);
+
+        // Store admin info in session
+        $_SESSION['admin_id']   = $admin['admin_id'];
+        $_SESSION['admin_name'] = $admin['name'];
+        $_SESSION['admin_role'] = $admin['role'];
+
         header('Location: index.php');
         exit();
     } else {

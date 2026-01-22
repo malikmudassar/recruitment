@@ -14,7 +14,7 @@ require '../db.php';
 $admin_name = htmlspecialchars($_SESSION['admin_name'] ?? 'Admin', ENT_QUOTES, 'UTF-8');
 $error = '';
 $success = '';
-
+$hr_id = $_SESSION['admin_id']; // This is the logged-in HR ID
 // Fetch categories securely
 try {
     $stmt = $conn->prepare("SELECT category_id, category_name, onsite_salary, offshore_salary, description, perks, onsite_perks FROM TestCategories");
@@ -98,8 +98,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             // Insert job into database
             $stmt = $conn->prepare("
-                INSERT INTO Jobs (category_id, title, description, requirements, salary_package, perks, location, created_at, screening_questions, reference)
-                VALUES (:category_id, :title, :description, :requirements, :salary_package, :perks, :location, NOW(), :screening_questions, :reference)
+                INSERT INTO Jobs (category_id, title, description, requirements, salary_package, perks, location, created_at, screening_questions, reference, hr_id )
+                VALUES (:category_id, :title, :description, :requirements, :salary_package, :perks, :location,  NOW(), :screening_questions, :reference, :hr_id)
             ");
             $stmt->execute([
                 ':category_id' => $category_id,
@@ -110,7 +110,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 ':perks' => $perks,
                 ':location' => $location,
                 ':screening_questions' => $screening_questions_json,
-                ':reference' => $reference
+                ':reference' => $reference,
+                ':hr_id' => $hr_id
             ]);
 
             $conn->commit();

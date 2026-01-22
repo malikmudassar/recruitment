@@ -1,11 +1,12 @@
 <?php
 session_start();
 
-// Redirect to login if not logged in
-if (!isset($_SESSION['admin_id'])) {
+// Only allow admins
+if (!isset($_SESSION['admin_role']) || $_SESSION['admin_role'] !== 'admin') {
     header('Location: login.php');
     exit();
 }
+
 
 // Include database connection
 require 'db.php';

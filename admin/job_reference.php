@@ -1,200 +1,184 @@
 <?php
 session_start();
 
-// Redirect to login if not logged in
 if (!isset($_SESSION['admin_id'])) {
     header('Location: login.php');
     exit();
 }
 
-include '../db.php'; // Database connection
+include '../db.php';
+
 $admin_name = htmlspecialchars($_SESSION['admin_name'], ENT_QUOTES, 'UTF-8');
 
-// Fetch jobs
 try {
     $stmt = $conn->prepare("
         SELECT 
-            job_id,
-            title,
-            reference,
-            created_at
-        FROM Jobs
-        ORDER BY created_at DESC
+            j.job_id,
+            j.title,
+            j.reference,
+            j.location,
+            j.created_at,
+            j.is_archived,
+            a.name AS hr_name,
+            COUNT(c.candidate_id) AS total_candidates
+        FROM jobs j
+        JOIN admins a ON a.admin_id = j.hr_id
+        LEFT JOIN candidates c ON c.job_id = j.job_id
+        GROUP BY j.job_id
+        ORDER BY j.created_at DESC
     ");
     $stmt->execute();
     $jobs = $stmt->fetchAll(PDO::FETCH_ASSOC);
 } catch (PDOException $e) {
-    $error = "Error fetching jobs: " . $e->getMessage();
-    error_log($error);
+    $error = "Error fetching jobs";
+    error_log($e->getMessage());
 }
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Admin Panel - Job References</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/svg+xml" href="https://cinergiedigital.com/favicon.svg">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f5f7fa;
-            margin: 0;
-        }
-        main {
-            margin-left: 250px;
-            padding: 2rem;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .card {
-            background: #fff;
-            border-radius: 8px;
-            padding: 2rem;
-            box-shadow: 0 1px 6px rgba(0,0,0,0.1);
-        }
-        h1 {
-            margin-bottom: 1.5rem;
-            font-size: 1.75rem;
-            color: #1a202c;
-        }
-        .search-bar {
-            margin-bottom: 1rem;
-            max-width: 400px;
-        }
-        .search-bar input {
-            width: 100%;
-            padding: 0.5rem;
-            font-size: 1rem;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 1rem;
-        }
-        thead {
-            background-color: #edf2f7;
-        }
-        th, td {
-            padding: 0.75rem 1rem;
-            text-align: left;
-            border-bottom: 1px solid #e2e8f0;
-            font-size: 0.95rem;
-        }
-        tr:hover {
-            background-color: #f1f5f9;
-        }
-        a.btn-link {
-            color: #2563eb;
-            text-decoration: none;
-        }
-        a.btn-link:hover {
-            text-decoration: underline;
-        }
-        .alert-error {
-            background-color: #fed7d7;
-            color: #c53030;
-            padding: 1rem;
-            border-radius: 6px;
-            margin-bottom: 1rem;
-        }
-        @media (max-width: 768px) {
-            main {
-                margin-left: 0;
-                padding: 1rem;
-            }
-            table, thead, tbody, th, td, tr {
-                display: block;
-            }
-            thead {
-                display: none;
-            }
-            tr {
-                margin-bottom: 1rem;
-                background: #fff;
-                border-radius: 6px;
-                box-shadow: 0 1px 4px rgba(0,0,0,0.05);
-                padding: 1rem;
-            }
-            td {
-                border: none;
-                padding: 0.5rem 0;
-                display: flex;
-                justify-content: space-between;
-            }
-            td::before {
-                font-weight: bold;
-                content: attr(data-label);
-                flex-basis: 40%;
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<title>Admin | Jobs</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="https://cinergiedigital.com/favicon.svg">
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+}
+main {
+    margin-left: 250px;
+    padding: 2rem;
+}
+.card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+th {
+    background: #2563eb;
+    color: #fff;
+}
+tr:hover {
+    background: #f1f5f9;
+}
+.status-active {
+    color: #16a34a;
+    font-weight: bold;
+}
+.status-archived {
+    color: #dc2626;
+    font-weight: bold;
+}
+.action a {
+    margin-right: 8px;
+    text-decoration: none;
+    font-size: 14px;
+}
+.edit { color: #2563eb; }
+.delete { color: #dc2626; }
+.archive { color: #ea580c; }
+.view { color: #059669; }
+
+@media (max-width: 768px) {
+    main { margin-left: 0; }
+    table, thead, tbody, th, td, tr { display: block; }
+    thead { display: none; }
+    tr {
+        margin-bottom: 1rem;
+        background: #fff;
+        padding: 1rem;
+        border-radius: 6px;
+    }
+    td {
+        display: flex;
+        justify-content: space-between;
+    }
+    td::before {
+        content: attr(data-label);
+        font-weight: bold;
+    }
+}
+</style>
 </head>
+
 <body>
-    <?php include 'header.php'; ?>
-    <?php include 'sidenav.php'; ?>
 
-    <main>
-        <div class="container">
-            <div class="card">
-                <h1>Job References</h1>
+<?php include 'header.php'; ?>
+<?php include 'sidenav.php'; ?>
 
-                <?php if (isset($error)): ?>
-                    <div class="alert-error"><?php echo htmlspecialchars($error, ENT_QUOTES, 'UTF-8'); ?></div>
-                <?php endif; ?>
+<main>
+<div class="card">
+    <h2>Jobs Management</h2>
 
-                <div class="search-bar">
-                    <input type="text" id="searchInput" placeholder="Search by title or reference ID">
-                </div>
+    <?php if (isset($error)): ?>
+        <p style="color:red;"><?php echo $error; ?></p>
+    <?php endif; ?>
 
-                <table id="jobTable">
-                    <thead>
-                        <tr>
-                            <th>Title</th>
-                            <th>Reference ID</th>
-                            <th>Date Created</th>
-                            <th>View</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php if (empty($jobs)): ?>
-                            <tr><td colspan="4">No jobs found.</td></tr>
-                        <?php else: ?>
-                            <?php foreach ($jobs as $job): ?>
-                                <tr data-search="<?php echo strtolower(htmlspecialchars($job['title'] . ' ' . $job['reference'], ENT_QUOTES, 'UTF-8')); ?>">
-                                    <td data-label="Title"><?php echo htmlspecialchars($job['title'], ENT_QUOTES, 'UTF-8'); ?></td>
-                                    <td data-label="Reference"><?php echo htmlspecialchars($job['reference'], ENT_QUOTES, 'UTF-8'); ?></td>
-                                    <td data-label="Created At"><?php echo htmlspecialchars(date("d M Y", strtotime($job['created_at'])), ENT_QUOTES, 'UTF-8'); ?></td>
-                                    <td data-label="View">
-                                        <a class="btn-link" href="candidates.php?job_id=<?php echo urlencode($job['job_id']); ?>">View Candidates</a>
-                                    </td>
-                                </tr>
-                            <?php endforeach; ?>
-                        <?php endif; ?>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </main>
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Reference</th>
+                <th>HR</th>
+                <th>Location</th>
+                <th>Date & Time</th>
+                <th>Status</th>
+                <th>Candidates</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        <?php if (empty($jobs)): ?>
+            <tr><td colspan="8">No jobs found</td></tr>
+        <?php else: ?>
+            <?php foreach ($jobs as $job): ?>
+            <tr>
+                <td data-label="Title"><?php echo htmlspecialchars($job['title']); ?></td>
+                <td data-label="Reference"><?php echo htmlspecialchars($job['reference']); ?></td>
+                <td data-label="HR"><?php echo htmlspecialchars($job['hr_name']); ?></td>
+                <td data-label="Location"><?php echo htmlspecialchars($job['location']); ?></td>
+                <td data-label="Created">
+                    <?php echo date("d M Y, h:i A", strtotime($job['created_at'])); ?>
+                </td>
+                <td data-label="Status" class="<?php echo $job['is_archived'] ? 'status-archived' : 'status-active'; ?>">
+                    <?php echo $job['is_archived'] ? 'Archived' : 'Active'; ?>
+                </td>
+                <td data-label="Candidates">
+                    <?php echo $job['total_candidates']; ?>
+                    <br>
+                    <a class="view" href="candidates.php?job_id=<?php echo $job['job_id']; ?>">View</a>
+                </td>
+                <td data-label="Actions" class="action">
+                    <a class="edit" href="edit_job.php?id=<?php echo $job['job_id']; ?>">Edit</a>
+                    <a class="delete" href="delete_job.php?id=<?php echo $job['job_id']; ?>"
+                       onclick="return confirm('Delete this job?');">Delete</a>
+                    <a class="archive" href="toggle_archive.php?id=<?php echo $job['job_id']; ?>"
+                       onclick="return confirm('Are you sure?');">
+                       <?php echo $job['is_archived'] ? 'Unarchive' : 'Archive'; ?>
+                    </a>
+                </td>
+            </tr>
+            <?php endforeach; ?>
+        <?php endif; ?>
+        </tbody>
+    </table>
+</div>
+</main>
 
-    <?php include 'footer.php'; ?>
-    <script>
-        // Search Functionality
-        document.getElementById('searchInput').addEventListener('input', function () {
-            const searchTerm = this.value.toLowerCase().trim();
-            const rows = document.querySelectorAll('#jobTable tbody tr');
-
-            rows.forEach(row => {
-                const searchData = row.getAttribute('data-search');
-                row.style.display = searchData.includes(searchTerm) ? '' : 'none';
-            });
-        });
-    </script>
+<?php include 'footer.php'; ?>
 </body>
 </html>

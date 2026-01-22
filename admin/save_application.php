@@ -86,7 +86,7 @@ try {
         }
     }
     $answers_json = json_encode($answers);
-
+    
     $stmt = $conn->prepare("
         INSERT INTO Applications (
             job_id, name, email, phone_no, years_of_experience, linkedin_profile, cv_path, answers, submitted_at, reference, job_title, notice_period, salary_accept 
