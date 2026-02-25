@@ -17,7 +17,7 @@ $success = '';
 $hr_id = $_SESSION['admin_id']; // This is the logged-in HR ID
 // Fetch categories securely
 try {
-    $stmt = $conn->prepare("SELECT category_id, category_name, onsite_salary, offshore_salary, description, perks, onsite_perks FROM TestCategories");
+    $stmt = $conn->prepare("SELECT category_id, category_name, onsite_salary, offshore_salary, description, perks, onsite_perks FROM testcategories");
     $stmt->execute();
     $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
 } catch (PDOException $e) {
@@ -98,7 +98,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             // Insert job into database
             $stmt = $conn->prepare("
-                INSERT INTO Jobs (category_id, title, description, requirements, salary_package, perks, location, created_at, screening_questions, reference, hr_id )
+                INSERT INTO jobs (category_id, title, description, requirements, salary_package, perks, location, created_at, screening_questions, reference, hr_id )
                 VALUES (:category_id, :title, :description, :requirements, :salary_package, :perks, :location,  NOW(), :screening_questions, :reference, :hr_id)
             ");
             $stmt->execute([
@@ -154,6 +154,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             padding: 2rem 1rem;
         }
         .card {
+            margin-left: 200px;
             background: #FFFFFF;
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);

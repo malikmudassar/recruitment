@@ -15,7 +15,7 @@ $success = '';
 // Fetch test details
 if (isset($_GET['id'])) {
     $test_id = $_GET['id'];
-    $stmt = $conn->prepare("SELECT * FROM Tests WHERE test_id = :test_id");
+    $stmt = $conn->prepare("SELECT * FROM tests WHERE test_id = :test_id");
     $stmt->bindParam(':test_id', $test_id);
     $stmt->execute();
     $test = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -45,7 +45,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } else {
         // Update test in the database
         $stmt = $conn->prepare("
-            UPDATE Tests 
+            UPDATE tests 
             SET job_id = :job_id, title = :title, description = :description, duration = :duration
             WHERE test_id = :test_id
         ");

@@ -10,6 +10,10 @@ if (!isset($_SESSION['admin_id'])) {
 include '../db.php';
 $admin_name = htmlspecialchars($_SESSION['admin_name'], ENT_QUOTES, 'UTF-8');
 
+// $s3_path = "https://cinergie-recruitment-bucket.s3.me-central-1.amazonaws.com/";
+
+// $old_s3_path = "https://cinergie-recruitment-bucket.s3.me-central-1.amazonaws.com/old_resumes/";
+
 // Get filter parameters
 $notice_filter = isset($_GET['notice']) ? $_GET['notice'] : 'all';
 $salary_filter = isset($_GET['salary']) ? strtolower($_GET['salary']) : 'all';
@@ -36,8 +40,8 @@ try {
             a.notice_period,
             a.salary_accept,
             a.submitted_at
-        FROM Applications a
-        LEFT JOIN Jobs j ON a.job_id = j.job_id
+        FROM applications a
+        LEFT JOIN jobs j ON a.job_id = j.job_id
     ";
     if ($job_id_filter !== null) {
         $query .= " WHERE a.job_id = :job_id";
@@ -52,6 +56,23 @@ try {
     $applications = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
     foreach ($applications as &$app) {
+        // Define cutoff date
+        $cutoff_date = new DateTime('2026-02-24 23:59:59');
+
+        // Determine correct S3 base URL
+        $s3_base_url = "https://cinergie-recruitment-bucket.s3.me-central-1.amazonaws.com/";
+
+        if (!empty($app['submitted_at'])) {
+            $submitted_date = new DateTime($app['submitted_at']);
+
+            if ($submitted_date <= $cutoff_date) {
+                $s3_base_url = "https://cinergie-recruitment-bucket.s3.me-central-1.amazonaws.com/old_resumes/";
+            }
+        }
+
+        // Store per-application S3 URL
+        $app['s3_base_url'] = $s3_base_url;
+
         // Parse screening questions
         $raw_screening_questions = $app['screening_questions'] ?? '[]';
         $screening_questions = json_decode($raw_screening_questions, true);
@@ -705,6 +726,7 @@ try {
                                     'years_of_experience' => $app['years_of_experience'] ?? '',
                                     'linkedin_profile' => $app['linkedin_profile'] ?? '',
                                     'cv_path' => $app['cv_path'] ?? '',
+                                    's3_base_url' => $app['s3_base_url'] ?? '',
                                     'notice_period' => $app['notice_period'] ?? '',
                                     'salary_accept' => $app['salary_accept'] ?? '',
                                     'submitted_at' => $app['submitted_at'] ?? '',
@@ -767,6 +789,8 @@ try {
 
     <?php include 'footer.php'; ?>
     <script>
+
+        //const S3_BASE_URL = "<?php echo $s3_path; ?>";
         const searchInput = document.getElementById('searchInput');
         const filterForm = document.getElementById('filterForm');
         const detailsModal = document.getElementById('detailsModal');
@@ -895,7 +919,7 @@ try {
                     <p><strong>Phone:</strong> ${details.phone_no || 'N/A'}</p>
                     <p><strong>Experience:</strong> ${details.years_of_experience || 'N/A'} years</p>
                     <p><strong>LinkedIn:</strong> ${details.linkedin_profile ? `<a href="${details.linkedin_profile}" target="_blank" class="btn-link">View Profile</a>` : 'N/A'}</p>
-                    <p><strong>CV:</strong> ${details.cv_path ? `<a href="${details.cv_path}" class="btn-link" download>Download CV</a>` : 'No CV'}</p>
+                    <p><strong>CV:</strong> ${details.cv_path ? `<a href="${details.s3_base_url}${details.cv_path}" class="btn-link" target="_blank" rel="noopener noreferrer" download>Download CV</a>` : 'No CV'}</p>
                     <p><strong>Notice Period:</strong> ${details.notice_period || 'N/A'} days</p>
                     <p><strong>Salary Acceptance:</strong> ${details.salary_accept || 'N/A'}</p>
                     <p><strong>Submitted:</strong> ${details.submitted_at || 'N/A'}</p>

@@ -1,0 +1,7 @@
+{
+    "require": {
+        "aws/aws-sdk-php": "^3.369",
+        "thenetworg/oauth2-azure": "^2.2",
+        "vlucas/phpdotenv": "^5.6"
+    }
+}

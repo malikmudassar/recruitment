@@ -21,7 +21,7 @@ if (isset($_GET['id'])) {
         $response['message'] = 'Invalid application ID.';
     } else {
         try {
-            $stmt = $conn->prepare("DELETE FROM Applications WHERE application_id = :application_id");
+            $stmt = $conn->prepare("DELETE FROM applications WHERE application_id = :application_id");
             $stmt->bindParam(':application_id', $application_id, PDO::PARAM_INT);
             $stmt->execute();
 

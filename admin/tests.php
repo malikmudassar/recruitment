@@ -12,8 +12,8 @@ $admin_name = $_SESSION['admin_name'];
 // Fetch all tests with job titles
 $stmt = $conn->query("
     SELECT t.test_id, t.title, t.description, t.duration, t.created_at, j.title AS job_title
-    FROM Tests t
-    INNER JOIN Jobs j ON t.job_id = j.job_id
+    FROM tests t
+    INNER JOIN jobs j ON t.job_id = j.job_id
 ");
 $tests = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>

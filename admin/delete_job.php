@@ -13,7 +13,7 @@ if (isset($_GET['id'])) {
     $job_id = $_GET['id'];
 
     // Delete job from the database
-    $stmt = $conn->prepare("DELETE FROM Jobs WHERE job_id = :job_id");
+    $stmt = $conn->prepare("DELETE FROM jobs WHERE job_id = :job_id");
     $stmt->bindParam(':job_id', $job_id);
     $stmt->execute();
 }

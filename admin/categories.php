@@ -10,7 +10,7 @@ if (!isset($_SESSION['admin_id'])) {
 include 'db.php'; // Include database connection
 $admin_name = $_SESSION['admin_name'];
 // Fetch all categories
-$stmt = $conn->query("SELECT * FROM TestCategories");
+$stmt = $conn->query("SELECT * FROM testcategories");
 $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 

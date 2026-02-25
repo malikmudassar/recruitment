@@ -11,27 +11,44 @@ include '../db.php';
 $admin_name = htmlspecialchars($_SESSION['admin_name'], ENT_QUOTES, 'UTF-8');
 
 try {
+    // $stmt = $conn->prepare("
+    //     SELECT 
+    //         j.job_id,
+    //         j.title,
+    //         j.reference,
+    //         j.location,
+    //         j.created_at,
+    //         j.is_archived,
+    //         a.name AS hr_name,
+    //         COUNT(app.application_id) AS total_candidates
+    //     FROM jobs j
+    //     JOIN admins a ON a.admin_id = j.hr_id
+    //     LEFT JOIN applications c ON app.job_id = j.job_id
+    //     GROUP BY j.job_id
+    //     ORDER BY j.created_at DESC
+    // ");
     $stmt = $conn->prepare("
-        SELECT 
-            j.job_id,
-            j.title,
-            j.reference,
-            j.location,
-            j.created_at,
-            j.is_archived,
-            a.name AS hr_name,
-            COUNT(c.candidate_id) AS total_candidates
-        FROM jobs j
-        JOIN admins a ON a.admin_id = j.hr_id
-        LEFT JOIN candidates c ON c.job_id = j.job_id
-        GROUP BY j.job_id
-        ORDER BY j.created_at DESC
-    ");
+    SELECT 
+        j.job_id,
+        j.title,
+        j.reference,
+        j.location,
+        j.created_at,
+        j.is_archived,
+        a.name AS hr_name,
+        (
+            SELECT COUNT(*) 
+            FROM applications app 
+            WHERE app.job_id = j.job_id
+        ) AS total_candidates
+    FROM jobs j
+    JOIN admins a ON a.admin_id = j.hr_id
+    ORDER BY j.created_at DESC
+");
     $stmt->execute();
     $jobs = $stmt->fetchAll(PDO::FETCH_ASSOC);
 } catch (PDOException $e) {
-    $error = "Error fetching jobs";
-    error_log($e->getMessage());
+    die("SQL Error: " . $e->getMessage());
 }
 ?>
 

@@ -10,8 +10,8 @@ $admin_name = $_SESSION['admin_name'];
 // Fetch all questions with test titles
 $stmt = $conn->query("
     SELECT q.question_id, q.question_text, t.title AS test_title 
-    FROM Questions q
-    INNER JOIN Tests t ON q.test_id = t.test_id
+    FROM questions q
+    INNER JOIN tests t ON q.test_id = t.test_id
     ORDER BY q.question_id
 ");
 $questions = $stmt->fetchAll(PDO::FETCH_ASSOC);

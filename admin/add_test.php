@@ -13,7 +13,7 @@ $error = '';
 $success = '';
 
 // Fetch jobs for the dropdown
-$stmt = $conn->query("SELECT * FROM Jobs");
+$stmt = $conn->query("SELECT * FROM jobs");
 $jobs = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 // Handle form submission
@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } else {
         // Insert new test into the database
         $stmt = $conn->prepare("
-            INSERT INTO Tests (job_id, title, description, duration, created_at)
+            INSERT INTO tests (job_id, title, description, duration, created_at)
             VALUES (:job_id, :title, :description, :duration, NOW())
         ");
         $stmt->bindParam(':job_id', $job_id);

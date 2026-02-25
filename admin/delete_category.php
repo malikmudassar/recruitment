@@ -13,7 +13,7 @@ if (isset($_GET['id'])) {
     $category_id = $_GET['id'];
 
     // Delete category from the database
-    $stmt = $conn->prepare("DELETE FROM TestCategories WHERE category_id = :category_id");
+    $stmt = $conn->prepare("DELETE FROM testcategories WHERE category_id = :category_id");
     $stmt->bindParam(':category_id', $category_id);
     $stmt->execute();
 }

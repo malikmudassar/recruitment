@@ -36,7 +36,7 @@ try {
             j.reference,
             c.category_name
         FROM jobs j
-        LEFT JOIN TestCategories c ON j.category_id = c.category_id
+        LEFT JOIN testcategories c ON j.category_id = c.category_id
         WHERE j.job_id = :job_id AND j.is_archived = 0
         LIMIT 1
     ");

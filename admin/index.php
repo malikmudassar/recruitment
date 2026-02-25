@@ -319,7 +319,7 @@ if (empty($chart_labels)) {
             <button class="toggle-btn" id="darkModeToggle">
                 <i class="fas fa-moon"></i>
             </button>
-            <h1 class="welcome-msg">Fly Dubai Recruiting Team <?php echo htmlspecialchars($admin_name); ?></h1>
+            <h1 class="welcome-msg">Recruitment Portal, <?php echo htmlspecialchars($admin_name); ?></h1>
             <p class="welcome-sub">Here's what's happening with your recruitment pipeline today</p>
         </div>
         <!-- Stats Cards Row -->

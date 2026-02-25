@@ -1118,7 +1118,7 @@
 
 )
 
-[16-May-2025 09:24:32 Europe/Berlin] Raw reference: rr
+sh -i "Cinergie.pem" ubuntu@ec2-158-252-5-131.me-central-1.compute.amazonaws.com[16-May-2025 09:24:32 Europe/Berlin] Raw reference: rr
 [16-May-2025 09:24:32 Europe/Berlin] Raw job_title: DevOps Engineer
 [16-May-2025 09:24:32 Europe/Berlin] Decoded reference: rr
 [16-May-2025 09:24:32 Europe/Berlin] Decoded job_title: DevOps Engineer
@@ -5970,3 +5970,215 @@ Stack trace:
 )
 
 [19-Jan-2026 14:26:20 Europe/Berlin] Email error: SMTP Error: Could not authenticate.
+[24-Feb-2026 07:47:33 UTC] POST DATA: Array
+(
+    [job_id] => 141
+    [fullName] => Muhammad Luqman
+    [email] => mluqman1500@gmail.com
+    [phoneNo] => 03366760874
+    [experience] => 12
+    [linkedin_profile] => https://www.linkedin.com/in/muhammad-luqman-a43346226/
+    [noticePeriod] => 21
+    [salaryPackage] => Yes
+    [reference] => FZ-AE-330
+    [job_title] => Senior Data Integration Engineer (Pentaho)
+    [screening_questions] => [{"question":"Do you have at least 5 years of hands-on experience using Pentaho Data Integration (PDI) in production environments?","answer":"Yes"},{"question":"Have you built and deployed complex Pentaho Jobs (.kjb) and Transformations (.ktr) with error handling and restart logic?","answer":"Yes"},{"question":"How many years of experience do you have writing advanced SQL or PL/SQL for large datasets (10M+ records)?","answer":"5"},{"question":"Have you executed Pentaho jobs in production using Kitchen or Pan (command line), and implemented automated scheduling?","answer":"Yes"}]
+)
+
+[24-Feb-2026 07:47:33 UTC] FILES DATA: Array
+(
+    [cv] => Array
+        (
+            [name] => Muhammad Luqman Data Engineering.pdf
+            [full_path] => Muhammad Luqman Data Engineering.pdf
+            [type] => application/pdf
+            [tmp_name] => /tmp/phpkmfU6D
+            [error] => 0
+            [size] => 172821
+        )
+
+)
+
+[24-Feb-2026 07:47:34 UTC] S3 upload success. Key=applications/cv/141/cv_699d5795a74db6.78431881_Muhammad_Luqman_Data_Engineering.pdf
+[24-Feb-2026 07:47:35 UTC] Email error: SMTP Error: Could not authenticate.
+[24-Feb-2026 11:28:46 UTC] POST DATA: Array
+(
+    [job_id] => 137
+    [fullName] => Rana Zubair Ahmad
+    [email] => zubairrana995@gmail.com
+    [phoneNo] => 0528232557
+    [experience] => 5
+    [linkedin_profile] => https://www.linkedin.com/in/ranazubairahmad
+    [noticePeriod] => 0
+    [salaryPackage] => Yes
+    [reference] => FZ-AE-351
+    [job_title] => Senior Software Engineer – Airline eCommerce
+    [screening_questions] => [{"question":"How many total years of hands-on experience do you have working on airline or airline-specific eCommerce platforms (booking, manage booking, ancillaries, check-in, payments)?","answer":"5"},{"question":"Have you built and maintained large, production-grade airline or high-traffic eCommerce UIs using React or Angular, including state management and performance optimization?","answer":"Yes"},{"question":"Have you used Next.js (SSR/SSG) and Node.js in production to improve performance, SEO, or Core Web Vitals for customer-facing applications?","answer":"Yes"},{"question":"Is it acceptable for a senior airline eCommerce engineer to focus mainly on UI features and leave performance, SEO, and production reliability concerns to other teams?","answer":"Yes"}]
+)
+
+[24-Feb-2026 11:28:46 UTC] FILES DATA: Array
+(
+    [cv] => Array
+        (
+            [name] => Rana Zubair Ahmad - Senior Full Stack Engineer.pdf
+            [full_path] => Rana Zubair Ahmad - Senior Full Stack Engineer.pdf
+            [type] => application/pdf
+            [tmp_name] => /tmp/php6AMdzh
+            [error] => 0
+            [size] => 115819
+        )
+
+)
+
+[24-Feb-2026 11:28:46 UTC] Exception: Missing required field: noticePeriod
+[24-Feb-2026 11:29:08 UTC] POST DATA: Array
+(
+    [job_id] => 137
+    [fullName] => Rana Zubair Ahmad
+    [email] => zubairrana995@gmail.com
+    [phoneNo] => 0528232557
+    [experience] => 5
+    [linkedin_profile] => https://www.linkedin.com/in/ranazubairahmad
+    [noticePeriod] => 2
+    [salaryPackage] => Yes
+    [reference] => FZ-AE-351
+    [job_title] => Senior Software Engineer – Airline eCommerce
+    [screening_questions] => [{"question":"How many total years of hands-on experience do you have working on airline or airline-specific eCommerce platforms (booking, manage booking, ancillaries, check-in, payments)?","answer":"5"},{"question":"Have you built and maintained large, production-grade airline or high-traffic eCommerce UIs using React or Angular, including state management and performance optimization?","answer":"Yes"},{"question":"Have you used Next.js (SSR/SSG) and Node.js in production to improve performance, SEO, or Core Web Vitals for customer-facing applications?","answer":"Yes"},{"question":"Is it acceptable for a senior airline eCommerce engineer to focus mainly on UI features and leave performance, SEO, and production reliability concerns to other teams?","answer":"Yes"}]
+)
+
+[24-Feb-2026 11:29:08 UTC] FILES DATA: Array
+(
+    [cv] => Array
+        (
+            [name] => Rana Zubair Ahmad - Senior Full Stack Engineer.pdf
+            [full_path] => Rana Zubair Ahmad - Senior Full Stack Engineer.pdf
+            [type] => application/pdf
+            [tmp_name] => /tmp/phplqvKwz
+            [error] => 0
+            [size] => 115819
+        )
+
+)
+
+[24-Feb-2026 11:29:08 UTC] S3 upload success. Key=applications/cv/137/cv_699d8b8424c232.91228677_Rana_Zubair_Ahmad_-_Senior_Full_Stack_Engineer.pdf
+[24-Feb-2026 11:29:09 UTC] Email error: SMTP Error: Could not authenticate.
+[24-Feb-2026 21:10:47 UTC] POST DATA: Array
+(
+    [job_id] => 138
+    [fullName] => Eelaf Zafar
+    [email] => Eelafzafar4@gmail.com
+    [phoneNo] => +971527032532
+    [experience] => 5
+    [linkedin_profile] => https://www.linkedin.com/in/eelaf-zafar-2594b6255/
+    [noticePeriod] => 0
+    [salaryPackage] => Yes
+    [reference] => FZ-AE-321
+    [job_title] => Business Analyst (Airline PSS
+    [screening_questions] => [{"question":"Have you directly gathered and documented requirements for core PSS functions such as reservations, ticketing, check-in, rebooking, or ancillary services?","answer":"Yes"},{"question":"Have you worked on requirements involving airline inventory, booking classes, fare families, or availability rules within a PSS environment?","answer":"Yes"},{"question":"Is it acceptable for a Business Analyst on airline PSS projects to document requirements without understanding how airline operational or fare rules impact system behaviour?","answer":"No"}]
+)
+
+[24-Feb-2026 21:10:47 UTC] FILES DATA: Array
+(
+    [cv] => Array
+        (
+            [name] => Eelaf-BA.pdf
+            [full_path] => Eelaf-BA.pdf
+            [type] => application/pdf
+            [tmp_name] => /tmp/phpU8usYD
+            [error] => 0
+            [size] => 96121
+        )
+
+)
+
+[24-Feb-2026 21:10:47 UTC] Exception: Missing required field: noticePeriod
+[24-Feb-2026 21:11:03 UTC] POST DATA: Array
+(
+    [job_id] => 138
+    [fullName] => Eelaf Zafar
+    [email] => Eelafzafar4@gmail.com
+    [phoneNo] => +971527032532
+    [experience] => 5
+    [linkedin_profile] => https://www.linkedin.com/in/eelaf-zafar-2594b6255/
+    [noticePeriod] => 0
+    [salaryPackage] => Yes
+    [reference] => FZ-AE-321
+    [job_title] => Business Analyst (Airline PSS
+    [screening_questions] => [{"question":"Have you directly gathered and documented requirements for core PSS functions such as reservations, ticketing, check-in, rebooking, or ancillary services?","answer":"Yes"},{"question":"Have you worked on requirements involving airline inventory, booking classes, fare families, or availability rules within a PSS environment?","answer":"Yes"},{"question":"Is it acceptable for a Business Analyst on airline PSS projects to document requirements without understanding how airline operational or fare rules impact system behaviour?","answer":"Yes"}]
+)
+
+[24-Feb-2026 21:11:03 UTC] FILES DATA: Array
+(
+    [cv] => Array
+        (
+            [name] => Eelaf-BA.pdf
+            [full_path] => Eelaf-BA.pdf
+            [type] => application/pdf
+            [tmp_name] => /tmp/phpSdR0od
+            [error] => 0
+            [size] => 96121
+        )
+
+)
+
+[24-Feb-2026 21:11:03 UTC] Exception: Missing required field: noticePeriod
+[24-Feb-2026 21:11:31 UTC] POST DATA: Array
+(
+    [job_id] => 138
+    [fullName] => Eelaf Zafar
+    [email] => Eelafzafar4@gmail.com
+    [phoneNo] => +971527032532
+    [experience] => 5
+    [linkedin_profile] => https://www.linkedin.com/in/eelaf-zafar-2594b6255/
+    [noticePeriod] => 1
+    [salaryPackage] => Yes
+    [reference] => FZ-AE-321
+    [job_title] => Business Analyst (Airline PSS
+    [screening_questions] => [{"question":"Have you directly gathered and documented requirements for core PSS functions such as reservations, ticketing, check-in, rebooking, or ancillary services?","answer":"Yes"},{"question":"Have you worked on requirements involving airline inventory, booking classes, fare families, or availability rules within a PSS environment?","answer":"Yes"},{"question":"Is it acceptable for a Business Analyst on airline PSS projects to document requirements without understanding how airline operational or fare rules impact system behaviour?","answer":"No"}]
+)
+
+[24-Feb-2026 21:11:31 UTC] FILES DATA: Array
+(
+    [cv] => Array
+        (
+            [name] => Eelaf-BA.pdf
+            [full_path] => Eelaf-BA.pdf
+            [type] => application/pdf
+            [tmp_name] => /tmp/phprY6txH
+            [error] => 0
+            [size] => 96121
+        )
+
+)
+
+[24-Feb-2026 21:11:31 UTC] Exception: You have already applied for this job
+[25-Feb-2026 06:41:12 UTC] POST DATA: Array
+(
+    [job_id] => 138
+    [fullName] => Eelaf Zafar
+    [email] => Eelafzafar4@gmail.com
+    [phoneNo] => +971527032532
+    [experience] => 5
+    [linkedin_profile] => https://www.linkedin.com/in/eelaf-zafar-2594b6255/
+    [noticePeriod] => 1
+    [salaryPackage] => Yes
+    [reference] => FZ-AE-321
+    [job_title] => Business Analyst (Airline PSS
+    [screening_questions] => [{"question":"Have you directly gathered and documented requirements for core PSS functions such as reservations, ticketing, check-in, rebooking, or ancillary services?","answer":"Yes"},{"question":"Have you worked on requirements involving airline inventory, booking classes, fare families, or availability rules within a PSS environment?","answer":"Yes"},{"question":"Is it acceptable for a Business Analyst on airline PSS projects to document requirements without understanding how airline operational or fare rules impact system behaviour?","answer":"No"}]
+)
+
+[25-Feb-2026 06:41:12 UTC] FILES DATA: Array
+(
+    [cv] => Array
+        (
+            [name] => Eelaf-BA.pdf
+            [full_path] => Eelaf-BA.pdf
+            [type] => application/pdf
+            [tmp_name] => /tmp/phpG1PvXM
+            [error] => 0
+            [size] => 96121
+        )
+
+)
+
+[25-Feb-2026 06:41:12 UTC] Exception: You have already applied for this job

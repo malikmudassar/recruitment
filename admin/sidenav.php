@@ -140,14 +140,14 @@
             <li><a href="index.php">Dashboard</a></li>
  
             <!-- Jobs Sub-Menu -->
-            <li class="submenu">
-                <a href="javascript:void(0)" class="submenu-toggle">Jobs</a>
-                <ul class="submenu-items">
+            <!-- <li class="submenu"> -->
+                <!-- <a href="javascript:void(0)" class="submenu-toggle">Jobs</a> -->
+                <!-- <ul class="submenu-items"> -->
                     <li><a href="add_job.php">Add Job</a></li>
                
-                </ul>
+                <!-- </ul> -->
                   
-            </li>
+            <!-- </li> -->
         <?php if (isset($_SESSION['admin_role']) && $_SESSION['admin_role'] === 'admin'): ?>
 <li class="submenu">
     <a href="javascript:void(0)" class="submenu-toggle">Categories</a>
@@ -159,10 +159,10 @@
 <?php endif; ?>
 
           
-         <li><a href="job_reference.php">Candidate cv</a></li> 
-            <?php if (isset($_SESSION['admin_role']) && $_SESSION['admin_role'] === 'admin'): ?>
-<li><a href="admin_dashboard.php">HR stats</a></li>
-<?php endif; ?>
+         <li><a href="job_reference.php">List Jobs</a></li> 
+             <?php if (isset($_SESSION['admin_role']) && $_SESSION['admin_role'] === 'admin'): ?> 
+<!-- <li><a href="admin_dashboard.php">Add User</a></li> -->
+        <?php endif; ?>
 
               
 

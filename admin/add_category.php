@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } else {
         try {
             $stmt = $conn->prepare("
-                INSERT INTO TestCategories (category_name, description, offshore_salary, onsite_salary, perks, onsite_perks)
+                INSERT INTO testcategories (category_name, description, offshore_salary, onsite_salary, perks, onsite_perks)
                 VALUES (:category_name, :description, :offshore_salary, :onsite_salary, :perks, :onsite_perks)
             ");
             $stmt->execute([
@@ -81,6 +81,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             padding: 2rem 1rem;
         }
         .card {
+            margin-left: 200px;
             background: #FFFFFF;
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);

@@ -9,7 +9,7 @@ include '../db.php';
 
 if (isset($_GET['id'])) {
     $question_id = $_GET['id'];
-    $stmt = $conn->prepare("DELETE FROM Questions WHERE question_id = ?");
+    $stmt = $conn->prepare("DELETE FROM questions WHERE question_id = ?");
     $stmt->execute([$question_id]);
 }
 

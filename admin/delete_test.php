@@ -13,7 +13,7 @@ if (isset($_GET['id'])) {
     $test_id = $_GET['id'];
 
     // Delete test from the database
-    $stmt = $conn->prepare("DELETE FROM Tests WHERE test_id = :test_id");
+    $stmt = $conn->prepare("DELETE FROM tests WHERE test_id = :test_id");
     $stmt->bindParam(':test_id', $test_id);
     $stmt->execute();
 }

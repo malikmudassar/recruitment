@@ -23,7 +23,7 @@ if (!isset($_GET['id']) || !filter_var($_GET['id'], FILTER_VALIDATE_INT)) {
 
 $job_id = $_GET['id'];
 try {
-    $stmt = $conn->prepare("SELECT * FROM Jobs WHERE job_id = :job_id");
+    $stmt = $conn->prepare("SELECT * FROM jobs WHERE job_id = :job_id");
     $stmt->execute([':job_id' => $job_id]);
     $job = $stmt->fetch(PDO::FETCH_ASSOC);
 
@@ -43,7 +43,7 @@ try {
 
 // Fetch categories
 try {
-    $stmt = $conn->prepare("SELECT category_id, category_name, onsite_salary, offshore_salary, description, perks, onsite_perks FROM TestCategories");
+    $stmt = $conn->prepare("SELECT category_id, category_name, onsite_salary, offshore_salary, description, perks, onsite_perks FROM testcategories");
     $stmt->execute();
     $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
 } catch (PDOException $e) {
@@ -124,7 +124,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             // Update job in database
             $stmt = $conn->prepare("
-                UPDATE Jobs 
+                UPDATE jobs 
                 SET category_id = :category_id, title = :title, description = :description, requirements = :requirements, 
                     salary_package = :salary_package, perks = :perks, location = :location, screening_questions = :screening_questions, 
                     reference = :reference
@@ -147,7 +147,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $success = 'Job and screening questions updated successfully!';
             $_POST = [];
             // Refresh job data
-            $stmt = $conn->prepare("SELECT * FROM Jobs WHERE job_id = :job_id");
+            $stmt = $conn->prepare("SELECT * FROM jobs WHERE job_id = :job_id");
             $stmt->execute([':job_id' => $job_id]);
             $job = $stmt->fetch(PDO::FETCH_ASSOC);
             $screening_questions = !empty($job['screening_questions']) ? json_decode($job['screening_questions'], true) : [];
@@ -188,6 +188,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             padding: 2rem 1rem;
         }
         .card {
+            margin-left: 200px;
             background: #FFFFFF;
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);

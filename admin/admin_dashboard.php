@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             ':created_at' => $_SESSION['admin_id']
         ]);
 
-        $message = "HR user created successfully ✅";
+        $message = "User created successfully ✅";
 
     } catch (PDOException $e) {
         if ($e->getCode() == 23000) {
@@ -61,7 +61,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
         input, select, button {
-            width: 100%;
+            width: 95%;
             padding: 10px;
             margin-top: 10px;
         }
@@ -94,7 +94,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <option value="Senior HR">Admin</option>
         </select>
 
-        <button type="submit">Create HR User</button>
+        <button type="submit">Create User</button>
     </form>
 </div>
 

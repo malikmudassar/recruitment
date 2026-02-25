@@ -27,7 +27,7 @@ $questions = [
 ];
 
 foreach ($questions as $question) {
-    $stmt = $conn->prepare("INSERT INTO Questions (test_id, question_text) VALUES (:test_id, :question_text)");
+    $stmt = $conn->prepare("INSERT INTO questions (test_id, question_text) VALUES (:test_id, :question_text)");
     $stmt->bindParam(':test_id', $test_id);
     $stmt->bindParam(':question_text', $question);
     $stmt->execute();

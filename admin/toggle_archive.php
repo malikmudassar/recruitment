@@ -11,7 +11,7 @@ if (isset($_GET['id'])) {
     $job_id = $_GET['id'];
 
     // Get current archive status
-    $stmt = $conn->prepare("SELECT is_archived FROM Jobs WHERE job_id = ?");
+    $stmt = $conn->prepare("SELECT is_archived FROM jobs WHERE job_id = ?");
     $stmt->execute([$job_id]);
     $job = $stmt->fetch(PDO::FETCH_ASSOC);
 
@@ -19,7 +19,7 @@ if (isset($_GET['id'])) {
         $new_status = $job['is_archived'] ? 0 : 1;
 
         // Update archive status
-        $update = $conn->prepare("UPDATE Jobs SET is_archived = ? WHERE job_id = ?");
+        $update = $conn->prepare("UPDATE jobs SET is_archived = ? WHERE job_id = ?");
         $update->execute([$new_status, $job_id]);
     }
 }

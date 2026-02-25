@@ -12,7 +12,7 @@ $admin_name = $_SESSION['admin_name'];
 // Fetch candidate details
 if (isset($_GET['id'])) {
     $candidate_id = $_GET['id'];
-    $stmt = $conn->prepare("SELECT * FROM Candidates WHERE candidate_id = :candidate_id");
+    $stmt = $conn->prepare("SELECT * FROM candidates WHERE candidate_id = :candidate_id");
     $stmt->bindParam(':candidate_id', $candidate_id);
     $stmt->execute();
     $candidate = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -29,8 +29,8 @@ if (isset($_GET['id'])) {
 // Fetch tests taken by the candidate
 $stmt = $conn->prepare("
     SELECT t.title, tr.score, tr.total_questions, tr.correct_answers, tr.started_at, tr.completed_at
-    FROM TestResults tr
-    INNER JOIN Tests t ON tr.test_id = t.test_id
+    FROM testresults tr
+    INNER JOIN tests t ON tr.test_id = t.test_id
     WHERE tr.candidate_id = :candidate_id
 ");
 $stmt->bindParam(':candidate_id', $candidate_id);

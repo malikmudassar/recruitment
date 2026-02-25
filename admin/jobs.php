@@ -14,8 +14,8 @@ $admin_name = $_SESSION['admin_name'];
 $stmt = $conn->query("
     SELECT j.job_id, j.title, j.description, j.requirements, j.salary_package, j.perks, 
            j.location, j.is_archived, c.category_name 
-    FROM Jobs j
-    INNER JOIN TestCategories c ON j.category_id = c.category_id
+    FROM jobs j
+    INNER JOIN testcategories c ON j.category_id = c.category_id
 ");
 $jobs = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>

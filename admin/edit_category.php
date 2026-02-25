@@ -23,7 +23,7 @@ if (!isset($_GET['id']) || !filter_var($_GET['id'], FILTER_VALIDATE_INT)) {
 
 $category_id = $_GET['id'];
 try {
-    $stmt = $conn->prepare("SELECT * FROM TestCategories WHERE category_id = :category_id");
+    $stmt = $conn->prepare("SELECT * FROM testcategories WHERE category_id = :category_id");
     $stmt->execute([':category_id' => $category_id]);
     $category = $stmt->fetch(PDO::FETCH_ASSOC);
 
@@ -56,7 +56,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } else {
         try {
             $stmt = $conn->prepare("
-                UPDATE TestCategories 
+                UPDATE testcategories 
                 SET category_name = :category_name, description = :description, offshore_salary = :offshore_salary, 
                     onsite_salary = :onsite_salary, perks = :perks, onsite_perks = :onsite_perks
                 WHERE category_id = :category_id
@@ -73,7 +73,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             $success = 'Category updated successfully!';
             // Refresh category data
-            $stmt = $conn->prepare("SELECT * FROM TestCategories WHERE category_id = :category_id");
+            $stmt = $conn->prepare("SELECT * FROM testcategories WHERE category_id = :category_id");
             $stmt->execute([':category_id' => $category_id]);
             $category = $stmt->fetch(PDO::FETCH_ASSOC);
         } catch (PDOException $e) {
@@ -108,6 +108,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             padding: 2rem 1rem;
         }
         .card {
+            margin-left: 200px;
             background: #FFFFFF;
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);

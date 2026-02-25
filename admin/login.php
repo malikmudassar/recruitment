@@ -21,6 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt->execute([':email' => $email]);
     $admin = $stmt->fetch(PDO::FETCH_ASSOC);
 
+  
     if ($admin && password_verify($password, $admin['password'])) {
 
         // Regenerate session ID for security
@@ -34,6 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         header('Location: index.php');
         exit();
     } else {
+        echo "Error in loging";
         $error = "Invalid email or password.";
     }
 }
@@ -59,9 +61,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <div class="error-message"><?php echo $error; ?></div>
             <?php endif; ?>
             <form action="login.php" method="POST">
-                <input type="email" name="email" placeholder="Email" required>
+                <!-- <input type="email" name="email" placeholder="Email" required>
                 <input type="password" name="password" placeholder="Password" required>
-                <button type="submit">Login</button>
+                <button type="submit">Login</button> -->
+                <div class="microsoft-login" style="margin-top: 20px;">
+                   <a href="micrsoft-login.php">
+                     <button type="button">Login with Microsoft</button>
+                   </a> 
+                </div>
             </form>
         </div>
     </div>

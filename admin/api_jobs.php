@@ -28,7 +28,7 @@ try {
             j.reference,
             c.category_name
         FROM jobs j
-        LEFT JOIN TestCategories c ON j.category_id = c.category_id
+        LEFT JOIN testcategories c ON j.category_id = c.category_id
           WHERE j.is_archived = 0
         ORDER BY j.created_at DESC
     ");
